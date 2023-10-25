@@ -20,8 +20,8 @@
 
 <body>
 
-  <header class="header py-2 border-bottom bg-white">
-    <nav class="navbar navbar-expand-md" aria-label="">
+  <header class="header">
+    <nav class="navbar navbar-sticky navbar-expand-lg" aria-label="">
       <div class="container">
 
         <div class="logos-header d-flex flex-row align-items-center">
@@ -36,7 +36,6 @@
           </div>
         </div>
 
-        <!-- <a class="navbar-brand" href="#"><img class="logo-header-pel" src="img/logo-header-pel.svg" alt="Programas de Estudio en Línea CCH"></a> -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -45,7 +44,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link" aria-current="page" href="#">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Acerca de</a>
@@ -54,7 +53,7 @@
               <a class="nav-link" href="#">Asignaturas</a>
             </li>
           </ul>
-          <a class="btn btn-primary btn-ingresar" href="/docs/5.3/components/navbar/" role="button">Ingresar a
+          <a class="btn btn-orange rounded-pill" href="#" role="button">Ingresar a
             Moodle</a>
         </div>
       </div>
@@ -62,28 +61,43 @@
   </header>
 
   <!--Portada-->
-  <section>
-    <div class="position-relative overflow-hidden">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-7">
-            <div class="portada-izq">
-              <div class="textos-portada">
-                <h1 class="titulo-principal">Programas de Estudios en Línea</h1>
-                <p class="sumario">Lorem ipsum dolor sit amet consectetur interdum rhoncus mi non arcu vestibulum amet
-                  quis
-                  sed
-                  cras neque sit sodales id.</p>
-              </div>
+  <section class="portada">
+    <div class="container d-flex flex-column">
+      <div class="row align-items-center justify-content-center justify-content-lg-between">
+        <div class="col-md-6 col-lg-7 text-center text-lg-start level-3">
+          <div class="portada-izq">
+            <div class="textos-portada">
+              <h1 class="titulo-principal pb-4">Programas de Estudios en Línea</h1>
+              <p class="sumario pb-4">Lorem ipsum dolor sit amet consectetur interdum rhoncus mi non arcu vestibulum
+                amet
+                quis
+                sed
+                cras neque sit sodales id.</p>
+              <a class="btn btn-green rounded-pill" href="#" role="button">Explora las
+                asignaturas</a>
             </div>
           </div>
-          <div class="col-md-5">
-            <div class="portada-der"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid back back-static">
+      <div class="row justify-content-end h-100">
+        <div class="col-lg-4 overflow-hidden position-relative">
+          <div class="portada-der">
+            <div class="cuadro1-portada">
+              <div class="cuadro1"></div>
+            </div>
+            <img src="img/img-portada.jpg" alt="">
+            <div class="cuadro2-portada">
+              <div class="cuadro2"></div>
+            </div>
           </div>
         </div>
       </div>
 
     </div>
+
   </section>
 
 
