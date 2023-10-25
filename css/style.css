@@ -184,9 +184,29 @@ section.portada {
     border-color: #F53A0A
 }
 
+.shape-bg {
+    display: inline-block;
+    background-image: url(../img/shape.svg);
+    background-repeat: no-repeat;
+    /* padding-bottom: 0.5rem; */
+    color: rgb(248, 117, 83);
+    background-size: 100%;
+    background-position: center bottom;
+}
+
 
 
 @media (max-width: 991.98px) {
+
+    .header {
+        margin-bottom: 90px;
+    }
+
+    .textos-portada {
+        margin: 0;
+        text-align: center;
+    }
+
     .portada-izq {
         height: 50vh;
     }
@@ -194,5 +214,14 @@ section.portada {
     .back.back-static {
         position: static;
         height: 50vh;
+    }
+
+    .titulo-principal {
+        font-size: 3rem;
+    }
+
+    .cuadro1-portada,
+    .cuadro2-portada {
+        display: none;
     }
 }
