@@ -194,6 +194,45 @@ section.portada {
     background-position: center bottom;
 }
 
+.bloque-acerca {
+    padding: 100px 0;
+}
+
+.bloque-acerca-izquierdo img {
+    border-radius: 15px;
+}
+
+.bloque-acerca-derecho {
+    background: #FFFBEB;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+h2.subtitulo {
+    font-size: 3rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    padding-bottom: 1.875rem;
+}
+
+.numeralia {
+    text-align: center;
+    padding: 1.875rem 0;
+}
+
+.numero-grande {
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.borde-numeralia {
+    border-right: 1px solid #BDBDBD;
+    border-left: 1px solid #BDBDBD;
+}
+
+
+
 
 
 @media (max-width: 991.98px) {
