@@ -83,26 +83,30 @@ section.portada {
 }
 
 .portada-der {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background-size: cover;
-    background-position: center;
-    z-index: 1;
+}
+
+.img-portada {
+    height: 100%;
 }
 
 .cuadro1-portada {
     position: absolute;
     top: 30%;
-    left: 0;
-    z-index: -1;
+    right: 30%;
+    z-index: 0;
     margin-left: -150px;
 }
 
 .cuadro1 {
-    position: fixed;
+    position: relative;
     height: 200px;
     width: 200px;
     background: #F87553;
@@ -111,13 +115,13 @@ section.portada {
 .cuadro2-portada {
     position: absolute;
     top: 60%;
-    left: 0;
+    right: 30%;
     z-index: 1;
     margin-left: -50px;
 }
 
 .cuadro2 {
-    position: fixed;
+    /* position: fixed; */
     height: 100px;
     width: 100px;
     background: #FFC500;
