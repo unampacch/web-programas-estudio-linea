@@ -106,7 +106,6 @@ section.portada {
 }
 
 .cuadro1 {
-    position: relative;
     height: 200px;
     width: 200px;
     background: #F87553;
@@ -121,10 +120,52 @@ section.portada {
 }
 
 .cuadro2 {
-    /* position: fixed; */
     height: 100px;
     width: 100px;
     background: #FFC500;
+}
+
+.bloque-acerca {
+    position: relative;
+}
+
+.bloque-acerca-izquierdo {
+    position: relative;
+}
+
+.bloque-acerca-izquierdo img::before {
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background: #FFC500;
+    bottom: 0;
+}
+
+.cuadro-acerca {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.cuadro-amarillo {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background: #FFC500;
+    bottom: -50px;
+    margin-left: -50px;
+}
+
+.cuadro-naranja {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background: #F87553;
+    bottom: 50px;
+    margin-left: 50px;
+    z-index: 9;
 }
 
 .btn-green {
@@ -192,7 +233,6 @@ section.portada {
     display: inline-block;
     background-image: url(../img/shape.svg);
     background-repeat: no-repeat;
-    /* padding-bottom: 0.5rem; */
     color: rgb(248, 117, 83);
     background-size: 100%;
     background-position: center bottom;
@@ -236,9 +276,6 @@ h2.subtitulo {
 }
 
 
-
-
-
 @media (max-width: 991.98px) {
 
     .header {
@@ -252,6 +289,11 @@ h2.subtitulo {
 
     .portada-izq {
         height: 50vh;
+    }
+
+    .img-portada {
+        max-width: 100%;
+        height: auto
     }
 
     .back.back-static {
