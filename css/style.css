@@ -363,6 +363,43 @@ h2.subtitulo {
     color: #FFF;
 }
 
+.preguntas-frecuentes {
+    padding: 100px;
+    background: #E2FAFA;
+}
+
+.accordion-item:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.accordion-button {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #FFFFFF;
+    box-shadow: none;
+    color: #105F5F;
+}
+
+.accordion-button::after {
+    width: 2.25rem;
+    height: 2.25rem;
+    background-position: center;
+    background-color: rgba(16, 95, 95, 0.1);
+    transition: all .35s;
+    border-radius: 50%;
+    /* background-size: 1rem; */
+}
+
+/* .accordion-button:not(.collapsed)::after {
+    background-color: #105F5F;
+    color: #FFFFFF;
+} */
+
+
+
 @media (max-width: 991.98px) {
 
     .header {
