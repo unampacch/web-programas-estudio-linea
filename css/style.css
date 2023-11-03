@@ -146,30 +146,34 @@ section.portada {
     bottom: 0;
 }
 
-.cuadro-acerca {
+/* .cuadro-acerca {
     position: absolute;
     bottom: 0;
     left: 0;
     z-index: 1;
-}
+} */
 
-.cuadro-amarillo {
+.cuadro-acerca-amarillo {
     position: absolute;
     height: 100px;
     width: 100px;
     background: #FFC500;
-    bottom: -50px;
+    bottom: 0;
     margin-left: -50px;
+    margin-bottom: -50px;
+    z-index: 0;
 }
 
-.cuadro-naranja {
+.cuadro-acerca-naranja {
     position: absolute;
     height: 50px;
     width: 50px;
     background: #F87553;
-    bottom: 50px;
-    margin-left: 50px;
-    z-index: 9;
+    bottom: 0;
+    left: 0;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    z-index: 1;
 }
 
 .btn-green {
@@ -364,7 +368,7 @@ h2.subtitulo {
 }
 
 .preguntas-frecuentes {
-    padding: 100px;
+    padding: 100px 0;
     background: #E2FAFA;
 }
 
@@ -408,6 +412,44 @@ h2.subtitulo {
     box-shadow: 0 -0.5rem 1.125rem -0.5rem rgba(16, 95, 95, 0.9);
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256' fill='%23fff'%3e%3cpath d='M225.813 48.907L128 146.72 30.187 48.907 0 79.093l128 128 128-128z'/%3e%3c/svg%3e");
     transform: rotate(-180deg);
+}
+
+.bloque-preguntas-derecho {
+    position: relative;
+}
+
+.bloque-preguntas-derecho img {
+    border-radius: 15px;
+}
+
+/* .cuadro-preguntas {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+} */
+
+.cuadro-preguntas-amarillo {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background: #FFC500;
+    top: 0;
+    right: 0;
+    margin-right: -25px;
+    margin-top: -25px;
+}
+
+.cuadro-preguntas-naranja {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background: #F87553;
+    bottom: 0;
+    left: 0;
+    margin-left: -50px;
+    margin-bottom: -50px;
+    z-index: 9;
 }
 
 
