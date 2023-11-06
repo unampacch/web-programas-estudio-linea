@@ -223,7 +223,7 @@ section.portada {
     border-color: #188A8A
 }
 
-.btn-orange {
+.btn-ingresar {
     color: #fff;
     background-color: #F87553;
     border-color: #F87553;
@@ -231,10 +231,21 @@ section.portada {
     font-weight: 500;
 }
 
-.btn-orange:hover {
+.btn-ingresar:hover {
     color: #fff;
     background-color: #F53A0A;
     border-color: #F53A0A
+}
+
+.btn-ingresar i {
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .shape-bg {
@@ -454,80 +465,82 @@ h2.subtitulo {
 
 #footer-inicio {
     background-color: #111111;
-  }
-  
-  .footer-1 {
+}
+
+.footer-1 {
     padding: 50px 0;
     display: -ms-flexbox !important;
     display: flex !important;
     -ms-flex-align: center !important;
     align-items: center !important;
-  }
-  
-  .footer-2 {
+}
+
+.footer-2 {
     padding: 30px 0;
     display: -ms-flexbox !important;
     display: flex !important;
-  }
-  
-  hr.linea-footer {
+}
+
+hr.linea-footer {
     border-top: 1px solid rgba(241, 241, 241, 0.5);
     width: 100%;
     left: 0;
     position: absolute;
     margin: 0;
-  }
-  
-  #footer-inicio p {
+}
+
+#footer-inicio p {
     color: #fff;
     font-size: 16px;
     margin: 0;
-  }
-  
-  .footer-2 .navbar-nav>li>a {
+}
+
+.footer-2 .navbar-nav>li>a {
     padding: 0 15px;
-  }
-  
-  .footer-2 a {
+}
+
+.footer-2 a {
     color: #FFFFFF;
     text-decoration: none;
-  }
-  
-  .footer-2 a:hover, .footer-2 a:focus {
+}
+
+.footer-2 a:hover,
+.footer-2 a:focus {
     color: #188A8A;
-  }
-  
-  #footer-inicio .navbar-nav a {
+}
+
+#footer-inicio .navbar-nav a {
     font-family: noto-sans, sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 16px;
     color: #F1F1F1;
-  }
-  
-  #footer-inicio .nav>li>a:hover, #footer-inicio .nav>li>a:focus {
+}
+
+#footer-inicio .nav>li>a:hover,
+#footer-inicio .nav>li>a:focus {
     text-decoration: none;
     color: #188A8A;
     background-color: transparent;
-  }
-  
-  .footer-1 img {
+}
+
+.footer-1 img {
     margin: 20px 0;
     padding-right: 15px;
     display: inline-block;
     height: 50px;
-  }
-  
-  #creditos-leyenda {
+}
+
+#creditos-leyenda {
     display: -ms-flexbox !important;
     display: flex !important;
     -ms-flex: 1 1 auto !important;
     flex: 1 1 auto !important;
     -ms-flex-pack: start !important;
     justify-content: flex-start !important;
-  }
-  
-  #social {
+}
+
+#social {
     font-size: 14px;
     display: -ms-flexbox !important;
     display: flex !important;
@@ -537,50 +550,70 @@ h2.subtitulo {
     justify-content: flex-end !important;
     -ms-flex-align: center !important;
     align-items: center !important;
-  }
-  
-  .redes-footer {
+}
+
+.redes-footer {
     float: left;
     padding-left: 1rem;
     border-left: 1px solid #999999;
-  }
-  
-  .redes-footer ul {
+}
+
+.redes-footer ul {
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-  
-  .redes-footer ul li {
+}
+
+.redes-footer ul li {
     display: inline-block;
     zoom: 1;
     vertical-align: middle;
-  }
-  
-  .redes-footer ul li a {
+}
+
+.redes-footer ul li a {
     display: block;
     font-size: 1.2em;
     margin: 0 5px;
     text-decoration: none;
-  }
-  
-  .redes-footer ul li a i {
-    color: #FFFFFF;
-  }
-  
-  .redes-footer ul li a:hover i, .redes-footer ul li a:focus i {
-    color: #188A8A;
-  }
+}
 
-  #footer-inicio .navbar-nav {
+.redes-footer ul li a i {
+    color: #FFFFFF;
+}
+
+.redes-footer ul li a:hover i,
+.redes-footer ul li a:focus i {
+    color: #188A8A;
+}
+
+#footer-inicio .navbar-nav {
     flex-direction: row !important;
-  }
+}
+
+
+@media (max-width: 1199.98px) {
+    .titulo-principal {
+        font-size: 4.5rem;
+    }
+}
 
 
 @media (max-width: 991.98px) {
 
-    .header {
-        margin-bottom: 90px;
+    h2.subtitulo {
+        font-size: 2.5rem;
+    }
+
+    /* .header {
+        margin-bottom: -90px;
+    }
+
+    .navbar-sticky {
+        position: relative;
+    } */
+
+    .portada-izq {
+        padding-top: 90px;
     }
 
     .textos-portada {
@@ -588,8 +621,22 @@ h2.subtitulo {
         text-align: center;
     }
 
-    .portada-izq {
-        height: 50vh;
+    section.portada {
+        position: relative;
+    }
+
+    section.portada::after {
+        content: '';
+        height: 10px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(to right, #188A8A 0%, #188A8A 33.3%, #F87553 33.3%, #F87553 66.3%, #FFC500 66.3%, #FFC500 100%);
+    }
+
+    .back.back-static {
+        display: none;
     }
 
     .img-portada {
@@ -597,13 +644,16 @@ h2.subtitulo {
         height: auto
     }
 
-    .back.back-static {
-        position: static;
-        height: 50vh;
-    }
-
     .titulo-principal {
         font-size: 3rem;
+    }
+
+    .area-asignatura .inner .content .title {
+        font-size: 1.75rem;
+    }
+
+    .area-asignatura .inner {
+        padding: 15px;
     }
 
     .cuadro1-portada,
@@ -611,28 +661,74 @@ h2.subtitulo {
         display: none;
     }
 
+    .bloque-acerca,
+    .bloque-asignaturas,
+    .preguntas-frecuentes {
+        padding: 50px 0;
+    }
+
+    .btn-green {
+        width: 100%;
+    }
+
+    .cuadro-acerca,
+    .cuadro-preguntas {
+        display: none;
+    }
+
+    .numeralia {
+        flex-direction: column;
+    }
+
+    .numero-grande {
+        font-size: 2rem;
+    }
+
+    .borde-numeralia {
+        border: 0;
+    }
+
+    .numeralia .col-lg-4 {
+        padding-right: 0 !important;
+        padding-left: 0 !important
+    }
+
+    .bloque-preguntas-derecho {
+        padding-top: 30px;
+    }
+
     #footer-inicio {
         text-align: center;
-      }
-    
-      .footer-1, .footer-2, #social {
+    }
+
+    .footer-1,
+    .footer-2,
+    #social {
         display: inline-grid !important;
         justify-content: center !important;
-      }
-    
-      .footer-1 {
+    }
+
+    .footer-1 {
         padding: 20px 0;
-      }
-    
-      #creditos-leyenda {
+    }
+
+    #creditos-leyenda {
         display: block !important;
         padding-bottom: 2rem;
-      }
-    
-      .redes-footer {
+    }
+
+    .redes-footer {
         float: none;
         padding-left: 0;
         padding-top: 2rem;
         border-left: none;
-      }
+    }
+}
+
+@media (max-width: 767.98px) {}
+
+@media (max-width: 575.98px) {
+    .bloque-acerca {
+        padding: 50px 0 0 0;
+    }
 }
