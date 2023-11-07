@@ -40,9 +40,9 @@ a:hover.nav-link {
     padding: 1.25rem 0;
 }
 
-.navbar-collapse ul {
+/* .navbar-collapse ul {
     padding: 1.25rem 0 0 0;
-}
+} */
 
 .logo-pel-header img {
     height: 3rem;
@@ -519,6 +519,21 @@ h2.subtitulo {
     margin-bottom: -50px;
     z-index: 9;
 }
+
+/* Acerca de */
+.header-interior {
+    position: relative;
+    background: #E2FAFA;
+    height: 250px;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.header-interior h2.subtitulo {
+    padding: 0;
+}
+
+/* Acerca de */
 
 #footer-inicio {
     background-color: #111111;
