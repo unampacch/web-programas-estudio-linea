@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?jbg7tv');
-  src:  url('../fonts/icomoon.eot?jbg7tv#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?jbg7tv') format('truetype'),
-    url('../fonts/icomoon.woff?jbg7tv') format('woff'),
-    url('../fonts/icomoon.svg?jbg7tv#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?g22s4i');
+  src:  url('../fonts/icomoon.eot?g22s4i#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?g22s4i') format('truetype'),
+    url('../fonts/icomoon.woff?g22s4i') format('woff'),
+    url('../fonts/icomoon.svg?g22s4i#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -36,7 +36,4 @@
 }
 .icon-area-talleres:before {
   content: "\e903";
-}
-.icon-ingreso-moodle:before {
-  content: "\e904";
 }

@@ -22,6 +22,10 @@ a:hover.nav-link {
     color: #105F5F !important;
 }
 
+.navbar {
+    background-color: #FFF;
+}
+
 .navbar-sticky {
     transform: translateY(0%);
     transition: all 0.4s ease-in-out;
@@ -33,7 +37,11 @@ a:hover.nav-link {
     opacity: 1;
     z-index: 1040;
     background-color: #FFF;
-    height: 90px;
+    padding: 1.25rem 0;
+}
+
+.navbar-collapse {
+    padding: 1.25rem 0 0 0;
 }
 
 .logo-pel-header img {
@@ -359,6 +367,7 @@ h2.subtitulo {
 
 .area-asignatura .inner .content .title a {
     color: #111111;
+    cursor: default;
 }
 
 .area-asignatura:hover .inner .content .title a {
@@ -601,6 +610,10 @@ hr.linea-footer {
 
 @media (max-width: 991.98px) {
 
+    a.nav-link {
+        margin: 0;
+    }
+
     h2.subtitulo {
         font-size: 2.5rem;
     }
@@ -665,6 +678,10 @@ hr.linea-footer {
         padding: 15px;
     }
 
+    .area-asignatura .inner .icon {
+        margin-right: 15px;
+    }
+
     .cuadro1-portada,
     .cuadro2-portada {
         display: none;
@@ -703,7 +720,7 @@ hr.linea-footer {
     }
 
     .numero-grande {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .borde-numeralia {
@@ -790,5 +807,11 @@ hr.linea-footer {
 @media (max-width: 575.98px) {
     .bloque-acerca {
         padding: 0;
+    }
+
+    .textos-portada,
+    .subtitulo,
+    .sumario {
+        text-align: left;
     }
 }
