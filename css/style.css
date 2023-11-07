@@ -40,7 +40,7 @@ a:hover.nav-link {
     padding: 1.25rem 0;
 }
 
-.navbar-collapse {
+.navbar-collapse ul {
     padding: 1.25rem 0 0 0;
 }
 
@@ -231,6 +231,31 @@ section.portada {
     border-color: #188A8A
 }
 
+/* .btn-ingresar {
+    color: #fff;
+    background-color: #F87553;
+    border-color: #F87553;
+    padding: 0.8rem 2rem;
+    font-weight: 500;
+}
+
+.btn-ingresar:hover {
+    color: #fff;
+    background-color: #F53A0A;
+    border-color: #F53A0A
+} */
+
+.btn-ingresar i {
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 .btn-ingresar {
     color: #fff;
     background-color: #F87553;
@@ -245,15 +270,37 @@ section.portada {
     border-color: #F53A0A
 }
 
-.btn-ingresar i {
-    font-size: 1.125rem;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+.btn-check:focus+.btn-ingresar,
+.btn-ingresar:focus {
+    color: #fff;
+    background-color: #F53A0A;
+    border-color: #F53A0A;
+    box-shadow: 0 0 0 0 rgba(245, 57, 10, 0.5)
+}
+
+.btn-check:checked+.btn-ingresar,
+.btn-check:active+.btn-ingresar,
+.btn-ingresar:active,
+.btn-ingresar.active,
+.show>.btn-ingresar.dropdown-toggle {
+    color: #fff !important;
+    background-color: #F53A0A !important;
+    border-color: #F53A0A !important
+}
+
+.btn-check:checked+.btn-ingresar:focus,
+.btn-check:active+.btn-ingresar:focus,
+.btn-ingresar:active:focus,
+.btn-ingresar.active:focus,
+.show>.btn-ingresar.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0 rgba(245, 57, 10, 0.5)
+}
+
+.btn-ingresar:disabled,
+.btn-ingresar.disabled {
+    color: #fff;
+    background-color: #F87553;
+    border-color: #F87553
 }
 
 .shape-bg {
@@ -356,7 +403,7 @@ h2.subtitulo {
     transition: 0.4s;
 }
 
-.area-asignatura .inner .content .title {
+.area-asignatura .inner .content .nombre-area {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 500;
     font-size: 2rem;
@@ -365,17 +412,17 @@ h2.subtitulo {
     transition: 0.4s;
 }
 
-.area-asignatura .inner .content .title {
+.area-asignatura .inner .content .nombre-area {
     color: #111111;
     cursor: default;
 }
 
-.area-asignatura:hover .inner .content .title {
+.area-asignatura:hover .inner .content .nombre-area {
     color: #FFF;
     text-decoration: none !important;
 }
 
-.area-asignatura .inner .content .description {
+.area-asignatura .inner .content .descripcion-area {
     margin-bottom: 0;
     font-weight: 500;
     font-size: 16px;
@@ -384,7 +431,7 @@ h2.subtitulo {
     color: #828282;
 }
 
-.area-asignatura:hover .inner .content .description {
+.area-asignatura:hover .inner .content .descripcion-area {
     color: #FFF;
 }
 
@@ -430,7 +477,7 @@ h2.subtitulo {
 
 .accordion-button:not(.collapsed)::after {
     background-color: #105F5F;
-    box-shadow: 0 -0.5rem 1.125rem -0.5rem rgba(16, 95, 95, 0.9);
+    /* box-shadow: 0 -0.5rem 1.125rem -0.5rem rgba(16, 95, 95, 0.9); */
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256' fill='%23fff'%3e%3cpath d='M225.813 48.907L128 146.72 30.187 48.907 0 79.093l128 128 128-128z'/%3e%3c/svg%3e");
     transform: rotate(-180deg);
 }
@@ -626,10 +673,6 @@ hr.linea-footer {
         position: relative;
     } */
 
-    .portada-izq {
-        padding-top: 90px;
-    }
-
     .textos-portada {
         margin: 0;
         /* text-align: center; */
@@ -670,7 +713,7 @@ hr.linea-footer {
         display: none;
     }
 
-    .area-asignatura .inner .content .title {
+    .area-asignatura .inner .content .nombre-area {
         font-size: 1.75rem;
     }
 
@@ -777,21 +820,29 @@ hr.linea-footer {
 
 @media (max-width: 767.98px) {
 
+    .titulo-principal {
+        font-size: 2.5rem;
+    }
+
+    .portada-izq {
+        padding: 90px 50px 0 50px;
+    }
+
     .bloque-acerca,
     .bloque-asignaturas,
     .preguntas-frecuentes {
         padding: 50px;
     }
 
-    .portada-izq {
+    /* .portada-izq {
         padding: 0 50px;
-    }
+    } */
 
     h2.subtitulo {
         padding-top: 1.875rem;
     }
 
-    .area-asignatura .inner .content .title {
+    .area-asignatura .inner .content .nombre-area {
         font-size: 1.5rem;
     }
 
