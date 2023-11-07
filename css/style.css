@@ -261,7 +261,7 @@ section.portada {
     padding: 100px 0;
 }
 
-.bloque-acerca-izquierdo img {
+.bloque-acerca-izquierdo img, .bloque-acerca-derecho img {
     border-radius: 15px;
 }
 
@@ -648,6 +648,18 @@ hr.linea-footer {
         font-size: 3rem;
     }
 
+    /* .bloque-acerca-derecho {
+        border-radius: 0;
+    } */
+
+    .img-mobile {
+        display: block;
+    }
+
+    .img-desk {
+        display: none;
+    }
+
     .area-asignatura .inner .content .title {
         font-size: 1.75rem;
     }
@@ -725,10 +737,29 @@ hr.linea-footer {
     }
 }
 
-@media (max-width: 767.98px) {}
+@media (min-width: 768px) {
+    .img-mobile {
+        display: none;
+    }
+
+    .img-desk {
+        display: block;
+    }
+}
+
+
+@media (max-width: 767.98px) {
+    .bloque-acerca {
+        background: #FFFBEB;
+    }
+
+    h2.subtitulo {
+        padding-top: 1.875rem;
+    }
+}
 
 @media (max-width: 575.98px) {
     .bloque-acerca {
-        padding: 50px 0 0 0;
+        padding: 0;
     }
 }
