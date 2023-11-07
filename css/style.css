@@ -365,12 +365,12 @@ h2.subtitulo {
     transition: 0.4s;
 }
 
-.area-asignatura .inner .content .title a {
+.area-asignatura .inner .content .title {
     color: #111111;
     cursor: default;
 }
 
-.area-asignatura:hover .inner .content .title a {
+.area-asignatura:hover .inner .content .title {
     color: #FFF;
     text-decoration: none !important;
 }
@@ -632,7 +632,7 @@ hr.linea-footer {
 
     .textos-portada {
         margin: 0;
-        text-align: center;
+        /* text-align: center; */
     }
 
     section.portada {
