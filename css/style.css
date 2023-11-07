@@ -261,7 +261,8 @@ section.portada {
     padding: 100px 0;
 }
 
-.bloque-acerca-izquierdo img, .bloque-acerca-derecho img {
+.bloque-acerca-izquierdo img,
+.bloque-acerca-derecho img {
     border-radius: 15px;
 }
 
@@ -648,10 +649,6 @@ hr.linea-footer {
         font-size: 3rem;
     }
 
-    /* .bloque-acerca-derecho {
-        border-radius: 0;
-    } */
-
     .img-mobile {
         display: block;
     }
@@ -679,7 +676,20 @@ hr.linea-footer {
         padding: 50px 0;
     }
 
-    .btn-green {
+    .bloque-acerca {
+        background: #FFFBEB;
+    }
+
+    .bloque-acerca .numeralia {
+        display: none !important;
+    }
+
+    .bloque-acerca .btn-green {
+        margin-top: 1rem;
+    }
+
+    .btn-green,
+    .btn-ingresar {
         width: 100%;
     }
 
@@ -749,12 +759,31 @@ hr.linea-footer {
 
 
 @media (max-width: 767.98px) {
-    .bloque-acerca {
-        background: #FFFBEB;
+
+    .bloque-acerca,
+    .bloque-asignaturas,
+    .preguntas-frecuentes {
+        padding: 50px;
+    }
+
+    .portada-izq {
+        padding: 0 50px;
     }
 
     h2.subtitulo {
         padding-top: 1.875rem;
+    }
+
+    .area-asignatura .inner .content .title {
+        font-size: 1.5rem;
+    }
+
+    .bloque-acerca .numeralia {
+        display: block !important;
+    }
+
+    .bloque-acerca .btn-green {
+        margin-top: 0;
     }
 }
 
