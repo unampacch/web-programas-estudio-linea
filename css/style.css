@@ -520,7 +520,9 @@ h3,
     padding: 0;
 }
 
-.intro-interior {
+.intro-interior,
+.numeralia-interior,
+.interior-acerca {
     padding: 100px 50px 0 50px;
 }
 
@@ -535,7 +537,7 @@ h3,
 }
 
 .numeralia-interior {
-    padding: 100px 0;
+    /* padding: 100px 0; */
     color: #FFFFFF;
 }
 
@@ -886,13 +888,15 @@ hr.linea-footer {
         height: 150px;
     }
 
-    .intro-interior {
+    .intro-interior,
+    .numeralia-interior,
+    .interior-acerca {
         padding: 50px 50px 0 50px;
     }
 
-    .numeralia-interior {
+    /* .numeralia-interior, .interior-acerca {
         padding: 50px;
-    }
+    } */
 
 }
 
