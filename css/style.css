@@ -158,13 +158,6 @@ section.portada {
     bottom: 0;
 }
 
-/* .cuadros-1 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-} */
-
 .cuadros-1-amarillo {
     position: absolute;
     height: 100px;
@@ -541,6 +534,22 @@ h3,
     border-radius: 15px;
 }
 
+.numeralia-interior {
+    padding: 100px 0;
+    color: #FFFFFF;
+}
+
+.numeralia-interior .container {
+    background: #188A8A;
+    padding: 3.125rem;
+    border-radius: 15px;
+}
+
+.numeralia-interior .borde-numeralia {
+    border-right: 1px solid #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+}
+
 /* Acerca de */
 
 #footer-inicio {
@@ -836,7 +845,8 @@ hr.linea-footer {
         font-size: 2.5rem;
     }
 
-    .borde-numeralia {
+    .borde-numeralia,
+    .numeralia-interior .borde-numeralia {
         border: 0;
     }
 
@@ -877,8 +887,13 @@ hr.linea-footer {
     }
 
     .intro-interior {
-        padding: 50px 50px;
+        padding: 50px 50px 0 50px;
     }
+
+    .numeralia-interior {
+        padding: 50px;
+    }
+
 }
 
 
