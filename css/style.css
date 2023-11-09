@@ -990,14 +990,42 @@ hr.linea-footer {
 }
 
 @media (max-width: 575.98px) {
+
+    .portada-izq {
+        padding: 90px 18px 0 18px;
+    }
+
+    .bloque-acerca-derecho {
+        padding: 30px;
+    }
+
     .bloque-acerca {
         padding: 0;
+    }
+
+    .bloque-asignaturas,
+    .preguntas-frecuentes {
+        padding: 30px 18px;
     }
 
     .textos-portada,
     .subtitulo,
     .sumario {
         text-align: left;
+    }
+
+    .intro-interior,
+    .numeralia-interior,
+    .interior-acerca {
+        padding: 30px 18px 0 18px;
+    }
+
+    .numeralia-interior {
+        padding: 30px 30px;
+    }
+
+    .fotos-acerca-footer {
+        padding: 30px 18px;
     }
 
     .fotos-acerca-footer img {
