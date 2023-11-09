@@ -349,6 +349,11 @@ h2.subtitulo {
     background-color: #FEEEEA;
 }
 
+.bloque-asignaturas .subtitulo,
+.bloque-asignaturas .sumario {
+    text-align: center;
+}
+
 .area-asignatura {
     padding-bottom: 1.875rem;
 }
@@ -774,6 +779,11 @@ hr.linea-footer {
         right: 27px;
         z-index: 10;
     }
+
+    .fotos-acerca-footer::before {
+        width: 75px;
+        height: 75px;
+    }
 }
 
 
@@ -833,6 +843,11 @@ hr.linea-footer {
 
     .img-desk {
         display: none;
+    }
+
+    .bloque-asignaturas .subtitulo,
+    .bloque-asignaturas .sumario {
+        text-align: left;
     }
 
     h3,
@@ -923,6 +938,7 @@ hr.linea-footer {
 
     .header-interior {
         height: 150px;
+        text-align: left;
     }
 
     .intro-interior,
@@ -938,7 +954,6 @@ hr.linea-footer {
     /* .numeralia-interior, .interior-acerca {
         padding: 50px;
     } */
-
 }
 
 
@@ -987,6 +1002,10 @@ hr.linea-footer {
     .bloque-preguntas-derecho {
         padding-top: 30px;
     }
+
+    .fotos-acerca-footer::before {
+        display: none;
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -1012,6 +1031,10 @@ hr.linea-footer {
     .subtitulo,
     .sumario {
         text-align: left;
+    }
+
+    .header-interior {
+        padding: 30px 12px
     }
 
     .intro-interior,
