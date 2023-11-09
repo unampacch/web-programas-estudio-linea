@@ -552,6 +552,43 @@ h3,
     border-left: 1px solid #FFFFFF;
 }
 
+.fotos-acerca-footer {
+    padding: 100px 50px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.fotos-acerca-footer img {
+    border-radius: 15px;
+    text-align: center;
+}
+
+.fotos-acerca-footer::before {
+    content: "";
+    width: 150px;
+    height: 150px;
+    background: #FFC500;
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: 32%;
+    z-index: -1;
+
+}
+
+.fotos-acerca-footer::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    z-index: -2;
+    background-color: #FEEEEA;
+}
+
 /* Acerca de */
 
 #footer-inicio {
@@ -894,6 +931,10 @@ hr.linea-footer {
         padding: 50px 50px 0 50px;
     }
 
+    .fotos-acerca-footer {
+        padding: 50px 50px;
+    }
+
     /* .numeralia-interior, .interior-acerca {
         padding: 50px;
     } */
@@ -957,6 +998,10 @@ hr.linea-footer {
     .subtitulo,
     .sumario {
         text-align: left;
+    }
+
+    .fotos-acerca-footer img {
+        margin-bottom: 15px;
     }
 }
 
