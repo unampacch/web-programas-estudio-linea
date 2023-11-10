@@ -598,7 +598,7 @@ h3,
 
 /* Asignaturas */
 .asignaturas-disponibles {
-    padding: 100px 0;
+    padding: 100px 0 0 0;
 }
 
 .texto-filtro {
@@ -609,6 +609,32 @@ h3,
 
 .nav-filtros a.nav-link {
     margin: 0 5px;
+}
+
+.cards-asignaturas {
+    padding: 50px 0 100px 0;
+}
+
+.cards-asignaturas .card {
+    border-radius: 15px;
+}
+
+.cards-asignaturas .c.cards-asignaturasard img {
+    border-radius: 30px;
+}
+
+.cards-asignaturas .card-img-top {
+    padding: 15px;
+}
+
+.subtitulo-area {
+    font-weight: 500;
+    font-size: 16px;
+    color: #828282;
+}
+
+.cards-asignaturas .card-body {
+    height: 150px;
 }
 
 /* Asignaturas */
@@ -972,7 +998,7 @@ hr.linea-footer {
         padding: 50px;
     } */
 
-    .asignaturas-disponibles {
+    .asignaturas-disponibles .texto-intro-asignaturas {
         text-align: center;
     }
 
