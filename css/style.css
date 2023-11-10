@@ -596,6 +596,23 @@ h3,
 
 /* Acerca de */
 
+/* Asignaturas */
+.asignaturas-disponibles {
+    padding: 100px 0;
+}
+
+.texto-filtro {
+    text-transform: uppercase;
+    color: #828282;
+    font-weight: 700;
+}
+
+.nav-filtros a.nav-link {
+    margin: 0 5px;
+}
+
+/* Asignaturas */
+
 #footer-inicio {
     background-color: #111111;
 }
@@ -954,6 +971,35 @@ hr.linea-footer {
     /* .numeralia-interior, .interior-acerca {
         padding: 50px;
     } */
+
+    .asignaturas-disponibles {
+        text-align: center;
+    }
+
+    .texto-filtro {
+        text-align: center;
+    }
+
+    .filtros-asignaturas .row {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* .nav-filtros {
+        width: 100%;
+    } */
+
+    .nav-filtros ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .instruccion-filtro {
+        margin: 0 auto;
+    }
 }
 
 
@@ -1053,6 +1099,10 @@ hr.linea-footer {
 
     .fotos-acerca-footer img {
         margin-bottom: 15px;
+    }
+
+    .nav-filtros ul {
+        display: block;
     }
 }
 
