@@ -663,6 +663,13 @@ h3,
 
 /* Asignaturas */
 
+.ingreso {
+    position: relative;
+    margin-top: 90px;
+    padding: 100px 50px;
+    background: #E2FAFA;
+}
+
 #footer-inicio {
     background-color: #111111;
 }
