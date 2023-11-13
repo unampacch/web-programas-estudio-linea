@@ -670,6 +670,23 @@ h3,
     background: #E2FAFA;
 }
 
+.ingreso label {
+    color: #828282;
+}
+
+.ayuda-ingreso {
+    font-size: .875rem;
+    color: #828282;
+}
+
+.ayuda-ingreso a {
+    color: #F87553;
+}
+
+.ayuda-ingreso a:hover {
+    color: #F53A0A;
+}
+
 #footer-inicio {
     background-color: #111111;
 }
@@ -1021,7 +1038,8 @@ hr.linea-footer {
         padding: 50px 50px 0 50px;
     }
 
-    .fotos-acerca-footer {
+    .fotos-acerca-footer,
+    .ingreso {
         padding: 50px 50px;
     }
 
