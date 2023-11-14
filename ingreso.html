@@ -63,16 +63,6 @@
     </nav>
   </header>
 
-  <!-- <section class="header-interior d-flex align-items-center justify-content-center">
-    <div class="container">
-      <div class="row align-items-center justify-content-center">
-        <div class="col-lg-12">
-          <h2 class="subtitulo">Acerca del <span class="shape-bg">proyecto</span></h2>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
   <section class="ingreso">
     <div class="container">
       <div class="row">
@@ -80,24 +70,26 @@
           <h2 class="subtitulo">Accede a las <span class="shape-bg">asignaturas</span></h2>
           <p>Por favor escribe tus datos.</p>
 
-          <div class="mb-3">
-            <input type="text" class="form-control form-control-lg rounded-pill" id="input-usuario"
-              placeholder="Usuario">
-            <label for="input-usuario" class="form-text mt-1">*RFC con homocalve</label>
-          </div>
+          <form action="../login/index.php" method="post">
+            <div class="mb-3">
+              <input type="text" id="inputEmail" name="username" class="form-control form-control-lg rounded-pill"
+                placeholder="Usuario">
+              <label for="inputEmail" class="form-text mt-1">*RFC con homocalve</label>
+            </div>
 
-          <div class="mb-3">
-            <input type="password" class="form-control form-control-lg rounded-pill" id="input-password"
-              placeholder="Contraseña">
-            <label for="input-password" class="form-text mt-1">*Número de trabajador</label>
-          </div>
+            <div class="mb-3">
+              <input type="password" id="inputPassword" name="password"
+                class="form-control form-control-lg rounded-pill" placeholder="Contraseña">
+              <label for="inputPassword" class="form-text mt-1">*Número de trabajador</label>
+            </div>
 
-          <div class="mb-3">
-            <input class="boton-login btn btn-green rounded-pill w-100 mb-3" type="submit" value="Ingresar">
-
-            <p class="ayuda-ingreso">Ayuda para ingresar: <a href="mailto:soportec@cch.unam.mx">soportec@cch.unam.mx</a>
-            </p>
-          </div>
+            <div class="mb-3">
+              <button type="submit" class="boton-login btn btn-green rounded-pill w-100 mb-3">Ingresar</button>
+              <p class="ayuda-ingreso">Ayuda para ingresar: <a
+                  href="mailto:soportec@cch.unam.mx">soportec@cch.unam.mx</a>
+              </p>
+            </div>
+          </form>
 
         </div>
 

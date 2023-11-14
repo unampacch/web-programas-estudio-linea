@@ -670,8 +670,8 @@ h3,
     background: #E2FAFA;
 }
 
-#input-usuario,
-#input-password {
+#inputEmail,
+#inputPassword {
     font-size: 1rem;
     padding: 0.8rem 1rem;
 }
