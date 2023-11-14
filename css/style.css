@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,500;0,700;1,500;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
-/* body {
-    font-size: 1.25rem;
-} */
-
+/* Inicia Index */
 a {
     text-decoration: none;
 }
@@ -39,10 +36,6 @@ a:hover.nav-link {
     background-color: #FFF;
     padding: 1.25rem 0;
 }
-
-/* .navbar-collapse ul {
-    padding: 1.25rem 0 0 0;
-} */
 
 .logo-pel-header img {
     height: 3rem;
@@ -224,20 +217,6 @@ section.portada {
     background-color: #188A8A;
     border-color: #188A8A
 }
-
-/* .btn-ingresar {
-    color: #fff;
-    background-color: #F87553;
-    border-color: #F87553;
-    padding: 0.8rem 2rem;
-    font-weight: 500;
-}
-
-.btn-ingresar:hover {
-    color: #fff;
-    background-color: #F53A0A;
-    border-color: #F53A0A
-} */
 
 .btn-ingresar i {
     font-size: 1.125rem;
@@ -511,7 +490,9 @@ h3,
     z-index: 9;
 }
 
-/* Acerca de */
+/* Termina Index */
+
+/* Inicia Acerca de */
 .header-interior {
     position: relative;
     background: #E2FAFA;
@@ -594,9 +575,9 @@ h3,
     background-color: #FEEEEA;
 }
 
-/* Acerca de */
+/* Termina Acerca de */
 
-/* Asignaturas */
+/* Inicia Asignaturas */
 .asignaturas-disponibles {
     padding: 100px 0 0 0;
 }
@@ -661,8 +642,9 @@ h3,
     transform: rotateY(180deg);
 }
 
-/* Asignaturas */
+/* Termina Asignaturas */
 
+/* Inicia Ingreso */
 .ingreso {
     position: relative;
     margin-top: 90px;
@@ -740,7 +722,9 @@ h3,
     z-index: 10;
 }
 
+/* Termina Ingreso */
 
+/* Inicia Footer */
 #footer-inicio {
     background-color: #111111;
 }
@@ -868,6 +852,8 @@ hr.linea-footer {
     flex-direction: row !important;
 }
 
+/* Termina Footer */
+
 
 @media (max-width: 1199.98px) {
     .titulo-principal {
@@ -945,6 +931,10 @@ hr.linea-footer {
 
 
 @media (max-width: 991.98px) {
+
+    .navbar-collapse ul {
+        padding: 1.25rem 0 0 0;
+    }
 
     a.nav-link {
         margin: 0;
