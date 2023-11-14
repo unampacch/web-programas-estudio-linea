@@ -670,6 +670,12 @@ h3,
     background: #E2FAFA;
 }
 
+#input-usuario,
+#input-password {
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+}
+
 .ingreso label {
     color: #828282;
 }
@@ -707,6 +713,31 @@ h3,
     z-index: 0;
     margin-top: -200px;
     margin-left: 100px;
+}
+
+.cuadros-3a,
+.cuadros-3b {
+    position: relative;
+}
+
+.cuadros-3-naranja {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background: #F87553;
+    top: -25px;
+    right: -25px;
+    z-index: 9;
+}
+
+.cuadros-3-amarillo {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background: #FFC500;
+    bottom: -50px;
+    left: -50px;
+    z-index: 10;
 }
 
 
@@ -892,6 +923,18 @@ hr.linea-footer {
         bottom: 15px;
         right: 27px;
         z-index: 10;
+    }
+
+    .cuadros-3-amarillo {
+        height: 50px;
+        width: 50px;
+        bottom: -25px;
+        left: -25px;
+    }
+
+    .foto-ingreso-2 {
+        margin-top: -150px;
+        margin-left: 100px;
     }
 
     .fotos-acerca-footer::before {
@@ -1101,6 +1144,11 @@ hr.linea-footer {
 
     .foto-ingreso-1,
     .foto-ingreso-2 {
+        display: none;
+    }
+
+    .cuadros-3a,
+    .cuadros-3b {
         display: none;
     }
 }
