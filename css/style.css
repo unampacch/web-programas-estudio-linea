@@ -594,7 +594,7 @@ h3,
 }
 
 .cards-asignaturas {
-    padding: 50px 0 100px 0;
+    padding: 50px 50px 100px 50px;
 }
 
 .cards-asignaturas .card {
@@ -993,10 +993,10 @@ hr.linea-footer {
         display: none;
     }
 
-    .bloque-asignaturas .subtitulo,
+    /* .bloque-asignaturas .subtitulo,
     .bloque-asignaturas .sumario {
         text-align: left;
-    }
+    } */
 
     h3,
     .area-asignatura .inner .content .nombre-area {
@@ -1086,7 +1086,6 @@ hr.linea-footer {
 
     .header-interior {
         height: 150px;
-        text-align: left;
     }
 
     .intro-interior,
@@ -1142,10 +1141,22 @@ hr.linea-footer {
     .cuadros-3b {
         display: none;
     }
+
+    .asignaturas-disponibles {
+        padding: 50px 0 0 0;
+    }
+
+    .cards-asignaturas {
+        padding: 50px;
+    }
 }
 
 
 @media (max-width: 767.98px) {
+
+    .logo-unam-header img, .logo-cch-header img {
+        margin-left: 1rem;
+    }
 
     .titulo-principal {
         font-size: 2.5rem;
@@ -1172,6 +1183,11 @@ hr.linea-footer {
     h3,
     .area-asignatura .inner .content .nombre-area {
         font-size: 1.5rem;
+    }
+
+    .subtitulo,
+    .sumario, .textos-portada, .ingreso p {
+        text-align: center;
     }
 
     .bloque-acerca .numeralia {
@@ -1219,11 +1235,11 @@ hr.linea-footer {
         padding: 30px 18px;
     }
 
-    .textos-portada,
+    /* .textos-portada,
     .subtitulo,
     .sumario {
         text-align: left;
-    }
+    } */
 
     .header-interior {
         padding: 30px 12px
@@ -1249,6 +1265,18 @@ hr.linea-footer {
 
     .nav-filtros ul {
         display: block;
+    }
+
+    .cards-asignaturas {
+        padding: 30px 30px 6px 30px;
+    }
+
+    .asignaturas-disponibles {
+        padding: 30px 0 0 0;
+    }
+
+    .ingreso {
+        padding: 30px 16px;
     }
 }
 
