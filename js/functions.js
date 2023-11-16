@@ -13,5 +13,16 @@ window.onload = function () {
         var keyword = $(this).attr('data-target');
         shuffleInstance.filter(keyword);
       });
-      
     }
+
+    new PureCounter({
+      selector: '.purecounter',
+      duration: 2,
+      delay: 10,
+      repeat: true,
+      decimals: 0,
+      legacy: true,
+      filesizing: false,
+      currency: false,
+      separator: false,
+  });
