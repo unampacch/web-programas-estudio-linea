@@ -26,3 +26,11 @@ window.onload = function () {
       currency: false,
       separator: false,
   });
+
+  wow = new WOW(
+    {
+      offset: 0,
+      mobile: true,
+    }
+  )
+  wow.init();

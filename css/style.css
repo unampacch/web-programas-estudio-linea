@@ -158,7 +158,7 @@ section.portada {
     background: #FFC500;
     bottom: -50px;
     left: -35px;
-    z-index: 0;
+    z-index: 9;
 }
 
 .cuadros-1-naranja {
@@ -168,7 +168,7 @@ section.portada {
     background: #F87553;
     bottom: 25px;
     left: 40px;
-    z-index: 1;
+    z-index: 10;
 }
 
 .btn-green {
@@ -1154,7 +1154,8 @@ hr.linea-footer {
 
 @media (max-width: 767.98px) {
 
-    .logo-unam-header img, .logo-cch-header img {
+    .logo-unam-header img,
+    .logo-cch-header img {
         margin-left: 1rem;
     }
 
@@ -1186,7 +1187,9 @@ hr.linea-footer {
     }
 
     .subtitulo,
-    .sumario, .textos-portada, .ingreso p {
+    .sumario,
+    .textos-portada,
+    .ingreso p {
         text-align: center;
     }
 
