@@ -90,21 +90,28 @@
               <div class="mb-3">
                 <input type="text" id="inputEmail" name="username" class="form-control form-control-lg rounded-pill"
                   placeholder="Usuario">
-                <label for="inputEmail" class="form-text mt-1">*RFC con homocalve</label>
+                <!-- <label for="inputEmail" class="form-text mt-1">*RFC con homocalve</label> -->
               </div>
 
               <div class="mb-3">
                 <input type="password" id="inputPassword" name="password"
                   class="form-control form-control-lg rounded-pill" placeholder="Contraseña">
-                <label for="inputPassword" class="form-text mt-1">*Número de trabajador</label>
+                <!-- <label for="inputPassword" class="form-text mt-1">*Número de trabajador</label> -->
               </div>
 
               <div class="mb-3">
-                <button type="submit" class="boton-login btn btn-green rounded-pill w-100 mb-3">Ingresar</button>
-                <p class="ayuda-ingreso">Ayuda para ingresar: <a
-                    href="mailto:soportec@cch.unam.mx">soportec@cch.unam.mx</a>
+                <button type="submit" class="boton-login btn btn-green rounded-pill w-100">Ingresar</button>
                 </p>
               </div>
+
+              <div class="ayuda-ingreso">
+                <p><strong>Alumno:</strong> El usuario es tu número de cuenta sin guiones y la contraseña es tu
+                  fecha de nacimiento en formato DDMMAAAA (Ejemplo: 31122005).</p>
+                <p><strong>Profesor:</strong> El usuario es su RFC (con homoclave y sin guiones), y la contraseña
+                  es su número de trabajador de la UNAM.</p>
+                <p>Ayuda para ingresar: <a href="mailto:soportec@cch.unam.mx">soportec@cch.unam.mx</a></p>
+              </div>
+
             </form>
 
           </div>

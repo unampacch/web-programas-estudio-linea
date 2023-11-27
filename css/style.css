@@ -693,7 +693,7 @@ h3,
     color: #828282;
 }
 
-.ayuda-ingreso {
+.ayuda-ingreso, .ayuda-ingreso p {
     font-size: .875rem;
     color: #828282;
 }
