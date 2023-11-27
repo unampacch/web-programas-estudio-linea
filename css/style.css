@@ -24,10 +24,6 @@ body {
     display: none;
 }
 
-.swup-transition-overlay {
-    background: linear-gradient(45deg, rgb(131, 58, 180), rgb(253, 29, 29), rgb(252, 176, 69));
-}
-
 main {
     margin-top: auto;
     margin-bottom: auto;
@@ -138,7 +134,8 @@ section.portada {
 }
 
 .img-portada {
-    height: 100%;
+    /* height: 100%; */
+    height: 100vh;
 }
 
 .cuadro1-portada {
