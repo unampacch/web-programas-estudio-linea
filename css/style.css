@@ -29,6 +29,92 @@ main {
     margin-bottom: auto;
 }
 
+/*INICIA CURSOR */
+/* body.CustomCursor,
+ body.CustomCursor * {
+     cursor: none !important;
+ } */
+ @media (max-width: 1024px) {
+
+    body.CustomCursor,
+    body.CustomCursor * {
+        cursor: auto !important;
+    }
+
+    body.CustomCursor .Cursor {
+        display: none !important;
+    }
+}
+
+body.CustomCursor .Cursor {
+    display: none;
+    pointer-events: none;
+}
+
+body.CustomCursor .Cursor.MouseMove {
+    display: block;
+}
+
+body.CustomCursor .Cursor>span.First {
+    z-index: 9999;
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+body.CustomCursor .Cursor>span.First i {
+    /* display: block;
+    transition: 0.3s background ease, 0.3s transform ease, 0.3s border ease;
+    width: 6px;
+    height: 6px;
+    margin: 12px;
+    pointer-events: none;
+    border-radius: 100%;
+    background: #FFC500;
+    box-sizing: border-box;
+    border-radius: 100%;
+    opacity: 1; */
+}
+
+body.CustomCursor .Cursor>span.Second {
+    z-index: 9998;
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+body.CustomCursor .Cursor>span.Second i {
+    display: block;
+    transition: 0.3s background ease, 0.3s transform ease, 0.3s border ease, 0.3s opacity ease;
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+    border-radius: 100%;
+    background: #FFC500;
+    /* border: 2px solid #FFC500; */
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    opacity: 1;
+}
+
+body.CustomCursor .Cursor.Hover>span.First i {}
+
+body.CustomCursor .Cursor.Hover>span.Second i {
+    background: #FFC500;
+    opacity: 0.4;
+    transform: scale(3.5);
+    border-width: 1px;
+}
+
+/*TERMINA CURSOR */
+
 /* Inicia Index */
 a {
     text-decoration: none;
