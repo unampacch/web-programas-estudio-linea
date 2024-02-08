@@ -34,7 +34,7 @@ main {
  body.CustomCursor * {
      cursor: none !important;
  } */
- @media (max-width: 1024px) {
+@media (max-width: 1024px) {
 
     body.CustomCursor,
     body.CustomCursor * {
@@ -779,7 +779,8 @@ h3,
     color: #828282;
 }
 
-.ayuda-ingreso, .ayuda-ingreso p {
+.ayuda-ingreso,
+.ayuda-ingreso p {
     font-size: .875rem;
     color: #828282;
 }
@@ -970,6 +971,88 @@ hr.linea-footer {
 }
 
 /* Termina Footer */
+
+/* Inicia Créditos */
+
+.box-creditos {
+    padding-bottom: 100px;
+}
+
+.contenedor-creditos {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #188A8A;
+}
+
+.box-creditos .contenedor-creditos:first-child {
+    padding-top: 0;
+}
+
+.box-creditos .contenedor-creditos:last-child {
+    padding-bottom: 0;
+    border: 0;
+}
+
+.creditos-titulo {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    margin-left: -15px;
+}
+
+.creditos-nombre {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    float: right;
+}
+
+ul.creditos-nombre {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+@media (max-width: 1024px) {
+    .box-creditos {
+        padding-bottom: 50px;
+    }
+
+    .creditos-titulo {
+        margin-left: 0;
+    }
+
+    .creditos-nombre {
+        float: none;
+    }
+
+    ul.creditos-nombre {
+        text-align: left;
+    }
+}
+
+@media (max-width: 576px) {
+    .contenedor-creditos {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .creditos-titulo {
+        font-size: 1.25rem;
+    }
+
+    .box-creditos,
+    .creditos-titulo,
+    ul.creditos-nombre {
+        text-align: center;
+    }
+}
+
+/* Termina Créditos */
 
 
 @media (max-width: 1199.98px) {
