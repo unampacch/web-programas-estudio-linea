@@ -699,9 +699,21 @@ h3,
     padding: 100px 0 0 0;
 }
 
+.instruccion-filtro {
+    padding-top: 50px;
+}
+
+.alert-warning {
+    border-radius: 15px;
+}
+
+.alert-warning p {
+    font-size: 1rem;
+}
+
 .texto-filtro {
     text-transform: uppercase;
-    color: #828282;
+    /* color: #828282; */
     font-weight: 700;
 }
 
