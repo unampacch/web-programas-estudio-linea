@@ -727,6 +727,7 @@ h3,
 
 .cards-asignaturas .card {
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .cards-asignaturas img {
