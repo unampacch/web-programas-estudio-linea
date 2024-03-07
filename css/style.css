@@ -772,6 +772,48 @@ h3,
     transform: rotateY(180deg);
 }
 
+.modal-asignaturas .modal-header img {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem
+}
+
+.modal-asignaturas .modal-title {
+    color: #111111;
+    margin-bottom: 1rem;
+}
+
+.modal-asignaturas .modal-body {
+    padding: 1.875rem;
+}
+
+.modal-asignaturas .modal-header {
+    padding: 0;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.modal-asignaturas .btn-close {
+    position: absolute;
+    top: 1.875rem;
+    right: 1.875rem;
+    background-color: #FFF;
+    opacity: 1;
+    border-radius: 100%;
+}
+
+
+/* .modal-asignaturas .modal-header,
+.modal-asignaturas .modal-footer {
+    border-bottom: 0;
+    border-top: 0;
+} */
+
+/* .modal-asignaturas .modal-header, .modal-asignaturas .modal-body, .modal-asignaturas .modal-footer {
+    padding: 20px;
+} */
+
+
 /* Termina Asignaturas */
 
 /* Inicia Ingreso */
