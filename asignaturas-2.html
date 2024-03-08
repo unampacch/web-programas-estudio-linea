@@ -183,7 +183,7 @@
             <!-- INICIAN MATEMÁTICAS -->
 
             <div class="col mb-4 matematicas" data-groups='["all","matematicas"]'>
-              <a target="#" data-bs-target="#matematicas1-modal" data-bs-toggle="modal">
+              <a target="#" data-bs-target="#myModal1" data-bs-toggle="modal">
                 <div class="card h-100">
                   <img src="img/portadas-cursos/matematicas-1.jpg" class="card-img-top" alt="Matemáticas I">
                   <div class="card-body">
@@ -195,24 +195,28 @@
             </div>
 
             <div class="col mb-4 experimentales" data-groups='["all","experimentales"]'>
-              <div class="card h-100" data-bs-target="#matematicas1" data-bs-toggle="modal">
-                <img src="img/portadas-cursos/quimica-2.jpg" class="card-img-top" alt="Química II">
-                <div class="card-body">
-                  <p class="subtitulo-area">Experimentales</p>
-                  <h4 class="card-title">Química II</h4>
+              <a target="#" data-bs-target="#myModal2" data-bs-toggle="modal">
+                <div class="card h-100">
+                  <img src="/img/portadas-cursos/quimica-1.jpg" class="card-img-top" alt="Química II">
+                  <div class="card-body">
+                    <p class="subtitulo-area">Experimentales</p>
+                    <h4 class="card-title">Química I</h4>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
 
             <div class="col mb-4 historico-social" data-groups='["all","historico-social"]'>
-              <div class="card h-100" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">
-                <img src="img/portadas-cursos/historia-universal-1.jpg" class="card-img-top"
-                  alt="Historia Universal Moderna y Contemporánea I">
-                <div class="card-body">
-                  <p class="subtitulo-area">Histórico-Social</p>
-                  <h4 class="card-title">Historia Universal Moderna y Contemporánea I</h4>
+              <a target="#" data-bs-target="#myModal3" data-bs-toggle="modal">
+                <div class="card h-100">
+                  <img src="img/portadas-cursos/historia-universal-1.jpg" class="card-img-top"
+                    alt="Historia Universal Moderna y Contemporánea I">
+                  <div class="card-body">
+                    <p class="subtitulo-area">Histórico-Social</p>
+                    <h4 class="card-title">Historia Universal Moderna y Contemporánea I</h4>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
 
           </div>
@@ -274,16 +278,16 @@
 
   </main>
 
-  <div class="modal-asignaturas modal fade" id="matematicas1-modal" aria-hidden="true"
-    aria-labelledby="matematicas1-modal" tabindex="-1">
+  <div class="modal-asignaturas modal fade" id="myModal1" aria-hidden="true" aria-labelledby="myModalLabel"
+    tabindex="-1" role="dialog">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <img src="../img/portadas-cursos/matematicas-1.jpg" class="img-fluid">
+          <img src="/img/portadas-cursos/matematicas-1.jpg" class="img-fluid">
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <h4 class="modal-title" id="matematicas1-modal">Matemáticas I</h4>
+          <h4 class="modal-title" id="myModalLabel">Matemáticas I</h4>
           Será capaz de operar con los números racionales (enteros y no enteros) y resolver
           problemas
           aritméticos, aplicando algunas heurísticas para facilitar la comprensión, la búsqueda de un
@@ -292,45 +296,68 @@
           iniciarse en el uso del lenguaje algebraico para expresar la generalidad.
         </div>
         <div class="modal-footer">
-          <button class="btn btn-link" data-bs-target="#matematicas1-modal" data-bs-toggle="modal">Química
+          <button type="button" class="btn btn-default btn-prev">Prev</button>
+          <button type="button" class="btn btn-default btn-next">Next</button>
+        </div>
+        <!-- <div class="modal-footer">
+          <button class="btn btn-link" data-bs-target="#matematicas1-modal" data-bs-toggle="modal">Anterior
             I</button>
-          <button class="btn btn-link" data-bs-target="#matematicas2-modal" data-bs-toggle="modal">Química
-            II</button>
+          <button class="btn btn-link" data-bs-target="#matematicas2-modal" data-bs-toggle="modal">Siguiente</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-asignaturas modal fade" id="myModal2" aria-hidden="true" aria-labelledby="myModalLabel"
+    tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="/img/portadas-cursos/quimica-1.jpg" class="img-fluid">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h4 class="modal-title" id="myModalLabel">Química I</h4>
+          Comprenderá las propiedades físicas y químicas del agua que la hacen un compuesto indispensable para la vida,
+          relacionará esas propiedades con su estructura y composición, con los modelos que las explican, para valorar
+          su uso y asumir una actitud responsable y crítica frente al potencial agotamiento del agua disponible, a
+          través del trabajo individual, cooperativo y colaborativo de indagación experimental y documental.
+        </div>
+        <!-- <div class="modal-footer">
+          <button class="btn btn-link" data-bs-target="#matematicas1-modal" data-bs-toggle="modal">Anterior
+            I</button>
+          <button class="btn btn-link" data-bs-target="#matematicas2-modal" data-bs-toggle="modal">Siguiente</button>
+        </div> -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default btn-prev">Prev</button>
+          <button type="button" class="btn btn-default btn-next">Next</button>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="modal-asignaturas modal fade" id="matematicas2-modal" aria-hidden="true"
-    aria-labelledby="matematicas2-modal" tabindex="-1">
+  <div class="modal-asignaturas modal fade" id="myModal3" aria-hidden="true" aria-labelledby="myModalLabel"
+    tabindex="-1" role="dialog">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h4 class="modal-title" id="matematicas2-modal">Matemáticas II</h4>
+          <img src="img/portadas-cursos/historia-universal-1.jpg" class="img-fluid">
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          Resolverá ecuaciones cuadráticas mediante diversos métodos de solución. Modelará problemas que conduzcan a
-          este tipo de ecuaciones. Establecerá la relación que existe entre el grado de la ecuación y el número de
-          soluciones.
+          <h4 class="modal-title" id="myModalLabel">Historia Universal Moderna y Contemporánea I</h4>
+          Caracterizará el conocimiento científico de la Historia, al reflexionar sobre el acontecer, la ciencia y las
+          teorías que lo estudian, con el objeto de que valore su importancia y conscientemente incida en la
+          transformación de su entorno social.
         </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal-asignaturas modal fade" id="exampleModalToggle3" aria-hidden="true"
-    aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title" id="exampleModalToggleLabel3">Historia Universal Moderna y Contemporánea I</h4>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          Caracterizará el conocimiento científico de la Historia, al reflexionar sobre el
-          acontecer,
-          la ciencia y las teorías que lo estudian, con el objeto de que valore su importancia y
-          conscientemente incida en la transformación de su entorno social.
+        <!-- <div class="modal-footer">
+          <button class="btn btn-link" data-bs-target="#matematicas1-modal" data-bs-toggle="modal">Anterior
+            I</button>
+          <button class="btn btn-link" data-bs-target="#matematicas2-modal" data-bs-toggle="modal">Siguiente</button>
+        </div> -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default btn-prev">Prev</button>
+          <button type="button" class="btn btn-default btn-next">Next</button>
         </div>
       </div>
     </div>
@@ -351,6 +378,7 @@
 
   <script src="js/cursor.js"></script>
   <script src="js/functions.js"></script>
+
 
   <script src="https://unpkg.com/shufflejs@6.1.0/dist/shuffle.js"></script>
 
