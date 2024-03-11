@@ -808,6 +808,23 @@ h3,
     justify-content: space-between;
 }
 
+.modal-asignaturas .btn-link {
+    text-decoration: none;
+    color: #000;
+}
+
+/* .modal-asignaturas .btn-link:hover {
+    color: #105F5F
+} */
+
+.modal-backdrop.show {
+    opacity: 0.8;
+}
+
+.modal-backdrop {
+    opacity: 0.8;
+}
+
 /* .modal-asignaturas .modal-header {
     padding: 0;
     height: auto;
