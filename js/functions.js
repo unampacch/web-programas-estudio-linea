@@ -34,29 +34,4 @@ window.onload = function () {
     }
   )
   wow.init();
-
-  $("div[id^='myModal']").each(function () {
-    var currentModal = $(this);
-    currentModal.find(".btn-next").click(function () {
-      currentModal.modal("hide");
-      currentModal
-        .closest("div[id^='myModal']")
-        .one("hidden.bs.modal", function (e) {
-          $(this).nextAll("div[id^='myModal']").first().modal("show");
-        });
-    });
-    //PREV
-    currentModal.find(".btn-prev").click(function () {
-      currentModal.modal("hide");
-      currentModal
-        .closest("div[id^='myModal']")
-        .one("hidden.bs.modal", function (e) {
-          $(this).prevAll("div[id^='myModal']").first().modal("show");
-        });
-    });
-  });
-  
-  
-  
-  
   
