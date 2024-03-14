@@ -129,17 +129,6 @@
         <div class="row align-items-center justify-content-center justify-content-lg-between">
           <div class="col-md-7 col-lg-7 text-lg-start level-3">
             <div class="portada-izq">
-              <div id="error-message"
-                class="alert alert-danger alert-dismissible fade show animate__animated animate__bounceIn d-none"
-                role="alert">
-                <div class="texto-error">
-                  <p class="mb-0 fw-bold"> <i class="bi bi-exclamation-circle-fill"></i> Ups, al parecer no has
-                    ingresado correctamente tus datos 😢</p>
-                  <p class="mb-0">Intenta nuevamente en <a href="ingreso.html" class="alert-link"> este
-                      link</a>.</p>
-                </div>
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-              </div>
               <div class="textos-portada wow animate__animated animate__fadeIn" data-wow-duration="1.5s">
                 <h1 class="titulo-principal pb-4">Programas de Estudio <span class="shape-bg">
                     en Línea</span></h1>
@@ -521,6 +510,26 @@
 
   </main>
 
+  <!-- error message -->
+  <div class="modal fade error-message d-none" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h4 class="texto-error">¡Ups!</h4>
+          <p>Al parecer no has
+            ingresado correctamente tus datos 😢, intenta nuevamente por favor.</p>
+          <a class="btn btn-ingresar rounded-pill" href="ingreso.html" role="button">Ingresa a tus
+            asignaturas</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- <div class="overlay transition-overlay"></div> -->
 
   <!-- <script type="module" src="js/swup.js"></script> -->
@@ -538,26 +547,37 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/cursor.js"></script>
 
-  <!-- <script>
-    const myModal = new bootstrap.Modal('#error-message');
-    document.querySelector('.btn-close').addEventListener('click', () => {
-      myModal.hide();
-    });
-  </script> -->
+  <script>
+    var myModal = new bootstrap.Modal(document.querySelector(".error-message"));
+    myModal.show();
+  </script>
+
+  <script>
+    $('.modal-backdrop').addClass('d-none');
+  </script>
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       // Obtenemos la URL actual
       var urlParams = new URLSearchParams(window.location.search);
 
+      // Función para mostrar o esconder un elemento
+      function mostrarElemento(selector) {
+        var elemento = document.querySelector(selector);
+        if (elemento) {
+          elemento.classList.remove("d-none");
+        }
+      }
+
       // Verificamos si existe el parámetro "errorcode" y si su valor es "3"
       if (urlParams.has("errorcode") && urlParams.get("errorcode") === "3") {
-        // Si es así, mostramos un mensaje de error en el HTML
-        var errorMessageDiv = document.getElementById("error-message");
-        errorMessageDiv.classList.remove("d-none");
+        // Mostramos el mensaje de error
+        mostrarElemento(".error-message");
+
+        // Mostramos el fondo modal
+        mostrarElemento(".modal-backdrop");
       }
     });
-
   </script>
 </body>
 
