@@ -548,26 +548,27 @@
   <script src="js/cursor.js"></script>
 
   <script>
-    var myModal = new bootstrap.Modal(document.querySelector(".error-message"));
-    myModal.show();
-  </script>
+    // Función para agregar o remover la clase "overflow-hidden" al body
+    function toggleOverflowHidden(estado) {
+      document.body.classList.toggle("overflow-hidden", estado);
+    }
 
-  <script>
-    $('.modal-backdrop').addClass('d-none');
-  </script>
+    // Cambiar el overflow del body al cargar la página
+    window.addEventListener('load', function () {
+      toggleOverflowHidden(false);
+    });
 
-  <script>
+    // Función para mostrar o esconder un elemento
+    function mostrarElemento(selector) {
+      var elemento = document.querySelector(selector);
+      if (elemento) {
+        elemento.classList.remove("d-none");
+      }
+    }
+
     document.addEventListener("DOMContentLoaded", function () {
       // Obtenemos la URL actual
       var urlParams = new URLSearchParams(window.location.search);
-
-      // Función para mostrar o esconder un elemento
-      function mostrarElemento(selector) {
-        var elemento = document.querySelector(selector);
-        if (elemento) {
-          elemento.classList.remove("d-none");
-        }
-      }
 
       // Verificamos si existe el parámetro "errorcode" y si su valor es "3"
       if (urlParams.has("errorcode") && urlParams.get("errorcode") === "3") {
@@ -576,6 +577,15 @@
 
         // Mostramos el fondo modal
         mostrarElemento(".modal-backdrop");
+
+        // Agregamos la clase "overflow-hidden" al body
+        toggleOverflowHidden(true);
+
+        // Crea un modal de Bootstrap a partir del elemento con la clase "error-message"
+        var myModal = new bootstrap.Modal(document.querySelector(".error-message"));
+
+        // Muestra el modal
+        myModal.show();
       }
     });
   </script>

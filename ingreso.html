@@ -122,16 +122,9 @@
           <div class="col-lg-6">
             <h2 class="subtitulo wow animate__animated animate__fadeIn" data-wow-duration="1.5s">Ingresa a tus <span
                 class="shape-bg">asignaturas</span></h2>
-                <div id="error-message" class="alert alert-danger d-none animate__animated animate__bounceIn">
-                  <i class="bi bi-exclamation-circle-fill"></i>
-                  <div class="texto-error">
-                    <p class="mb-0 fw-bold">Ups, al parecer no has ingresado correctamente tus datos 😢.</p>
-                    <p class="mb-0">Intenta nuevamente.</p>
-                  </div>
-                </div>
-                <div class="alert alert-warning">
-                  <p class="mb-0">Recuerda que para acceder al contenido debes estar inscrito.</p>
-                </div>
+            <div class="alert alert-warning">
+              <p class="mb-0">Recuerda que para acceder al contenido debes estar inscrito.</p>
+            </div>
             <!-- <p>Por favor escribe tus datos.</p> -->
             <form action="../login/index.php" method="post" class="wow animate__animated animate__fadeIn"
               data-wow-duration="2s">
@@ -253,21 +246,6 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/cursor.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Obtenemos la URL actual
-        var urlParams = new URLSearchParams(window.location.search);
-
-        // Verificamos si existe el parámetro "errorcode" y si su valor es "3"
-        if (urlParams.has("errorcode") && urlParams.get("errorcode") === "3") {
-          // Si es así, mostramos un mensaje de error en el HTML
-          var errorMessageDiv = document.getElementById("error-message");
-          errorMessageDiv.classList.remove("d-none");
-        }
-      });
-
-    </script>
-
 </body>
 
 </html>
