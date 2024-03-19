@@ -838,14 +838,12 @@ h3,
 
 .cards-asignaturas a:hover .card {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    transform: scale(1.01);
+    /* transform: scale(1.01); */
 }
 
 .cards-asignaturas .card {
-    overflow: hidden;
     transition: all 0.2s ease;
 }
-
 
 /* Termina Asignaturas */
 
