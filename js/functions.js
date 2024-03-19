@@ -1,19 +1,45 @@
-window.onload = function () {
-    var Shuffle = window.Shuffle;
-    var element = document.querySelector('.shuffle-container');
+// window.onload = function () {
+//     var Shuffle = window.Shuffle;
+//     var element = document.querySelector('.shuffle-container');
     
-    var shuffleInstance = new Shuffle(element, {
-      itemSelector: 'div'
-    }); 
+//     var shuffleInstance = new Shuffle(element, {
+//       itemSelector: 'div'
+//     }); 
       
-      $('.shuffle-filter li').on('click',function(e){
-        e.preventDefault();
-        $('.shuffle-filter li a').removeClass('active');
-        $(this).addClass('active'); 
-        var keyword = $(this).attr('data-target');
-        shuffleInstance.filter(keyword);
-      });
-    }
+//       $('.shuffle-filter li').on('click',function(e){
+//         e.preventDefault();
+//         $('.shuffle-filter li a').removeClass('active');
+//         $(this).addClass('active'); 
+//         var keyword = $(this).attr('data-target');
+//         shuffleInstance.filter(keyword);
+//       });
+//     } 
+
+window.onload = function() {
+  var Shuffle = window.Shuffle;
+  var element = document.querySelector('.shuffle-container');
+
+  // Add "active" class to the first li on page load
+  document.querySelector('.shuffle-filter li:first-child').classList.add('active');
+
+  var shuffleInstance = new Shuffle(element, {
+    itemSelector: 'div'
+  });
+
+  $('.shuffle-filter li').on('click', function(e) {
+    e.preventDefault();
+
+    // Remove "active" class from all li elements
+    $('.shuffle-filter li').removeClass('active');
+
+    // Add "active" class to the clicked li element
+    $(this).addClass('active');
+
+    var keyword = $(this).attr('data-target');
+    shuffleInstance.filter(keyword);
+  });
+};
+
 
     new PureCounter({
       selector: '.purecounter',

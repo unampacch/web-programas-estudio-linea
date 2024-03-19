@@ -721,6 +721,10 @@ h3,
     margin: 0 5px;
 }
 
+.nav-filtros li.nav-item.active a {
+    border-bottom: 2px solid #188A8A
+}
+
 .cards-asignaturas {
     padding: 50px 0 100px 0;
 }
@@ -931,6 +935,7 @@ h3,
     font-size: 3.125rem;
     margin-bottom: 1rem;
 }
+
 /* Termina Ingreso */
 
 /* Inicia Footer */
