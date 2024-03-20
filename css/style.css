@@ -946,6 +946,101 @@ h3,
 
 /* Termina Ingreso */
 
+/* Inicia Recursos */
+.cards-recursos {
+    padding: 50px 0 100px 0;
+}
+
+.cards-recursos .card {
+    border-radius: 15px;
+}
+
+.cards-recursos a {
+    color: #105F5F;
+}
+
+/* .resultado {
+    width: 100%;
+    padding: 1.5rem;
+} */
+
+.resultado .cabeza-recursos .col,
+.titulo-tabla-resp,
+.autor-tabla-resp,
+.asignatura-tabla-resp,
+.anio-tabla-resp,
+.consulta-tabla-resp {
+    display: block;
+    font-weight: bold;
+    color: #4f344b;
+}
+
+.resultado .col {
+    padding: 2rem;
+}
+
+.resultado .row>div {
+    font-weight: bold;
+    color: #999;
+    padding-right: 10px;
+    padding-left: 10px;
+    position: relative;
+    width: 100%;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.resultado a {
+    color: #188A8A;
+}
+
+.resultado a:hover {
+    color: #105F5F;
+}
+
+.resultado .cuerpo-recursos:hover {
+    color: #212529;
+    background-color: rgba(0, 0, 0, .075);
+}
+
+@media screen and (min-width: 768px) {
+
+    .titulo-tabla-resp,
+    .autor-tabla-resp,
+    .asignatura-tabla-resp,
+    .anio-tabla-resp,
+    .consulta-tabla-resp {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .resultado table .thead-acordeon,
+    .resultado .cabeza-recursos {
+        display: none;
+    }
+
+    /* .resultado {
+        padding: 0;
+    } */
+}
+
+@media screen and (max-width: 767px) {
+    .resultado .cuerpo-recursos {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #4f344b;
+        padding: 1.5rem 0;
+    }
+}
+
+/* Termina Recursos */
+
+
 /* Inicia Footer */
 #footer-inicio {
     background-color: #111111;
@@ -1449,7 +1544,8 @@ ul.creditos-nombre {
         padding: 50px 0 0 0;
     }
 
-    .cards-asignaturas {
+    .cards-asignaturas,
+    .cards-recursos {
         padding: 50px 0;
     }
 
@@ -1577,7 +1673,8 @@ ul.creditos-nombre {
         display: block;
     }
 
-    .cards-asignaturas {
+    .cards-asignaturas,
+    .cards-recursos {
         padding: 30px 10px 6px 10px;
     }
 
