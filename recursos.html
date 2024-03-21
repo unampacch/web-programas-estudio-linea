@@ -131,21 +131,74 @@
       </div>
     </section>
 
-    <section class="asignaturas-disponibles">
+    <section class="seccion-recursos-abiertos">
 
-      <div class="container mt-3 filtros-asignaturas">
+      <div class="container intro-recursos-abiertos">
 
-        <div class="row d-flex align-items-center">
-          <div class="col-lg-6">
-            <p class="mb-lg-0">Estos son algunos de los recursos que podrás encontrar en las asignaturas en línea, estos
-              recursos son completamente abiertos.</p>
+        <div class="row">
+          <div class="col-lg-4">
+            <p class="mb-lg-0">A partir de una alianza entre la Escuela Nacional Preparatoria, el Colegio de Ciencias y
+              Humanidades y B@UNAM se generaron materiales educativos abiertos para el bachillerato presencial. En el
+              caso del Colegio, los recursos están elaborados con base en el Modelo Educativo del CCH y tienen como
+              propósito ayudarte a comprender y aprender mejor los diversos temas que forman parte de los conocimientos
+              esenciales del bachillerato. Estos recursos se organizan en las 4 áreas del conocimiento.
+            </p>
+            <!-- <p>Estos recursos se organizan en las 4 áreas del conocimiento: Matemáticas,
+              Ciencias Experimentales, Histórico-Social y Talleres de Lenguaje y Comunicación.</p> -->
           </div>
-          <!-- <div class="col-lg-6">
-            <div class="alert alert-warning mb-0">
-              <p class="mb-0">Recuerda que para acceder al contenido debes estar inscrito.</p>
+          <div class="col-lg-8 acordeon-recursos-abiertos">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item rounded-4 shadow-sm">
+                <h4 class="accordion-header">
+                  <button class="accordion-button rounded-4" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    ¿Qué encontrarás en estos recursos?
+                  </button>
+                </h4>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body pt-0">
+                    <p><strong>Contenido:</strong> Resúmenes claros y concisos de los temas clave de cada asignatura
+                      para
+                      que
+                      repases lo aprendido en el aula.</p>
+                    <p><strong>Actividades:</strong> Ejercicios interactivos y cuestionarios para poner a prueba tus
+                      conocimientos y repasar diversos temas.</p>
+                    <p><strong>Videos:</strong> Explicaciones en video de los conceptos más complejos.</p>
+                    <p><strong>Infografías:</strong> Recursos visuales que te ayudarán a comprender mejor los temas.</p>
+                    <p><strong>Recursos adicionales: </strong> Artículos, libros y otros materiales para profundizar en
+                      tu
+                      aprendizaje.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item rounded-4 shadow-sm">
+                <h4 class="accordion-header">
+                  <button class="accordion-button rounded-4 collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    ¿Para quién son estos recursos?
+                  </button>
+                </h4>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body pt-0">
+                    <p><strong>Estudiantes: </strong> Te ayudarán a complementar tu aprendizaje en el aula y a
+                      prepararte
+                      para tus exámenes y a profundizar en los temas que te interesan.</p>
+                    <p><strong>Docentes: </strong> Te podrán servir como apoyo para tus clases y para crear tus propios
+                      materiales educativos.</p>
+                    <p><strong>Cualquier persona interesada en aprender: </strong> Estos recursos son accesibles para
+                      todos, independientemente de tu edad o nivel educativo.</p>
+                  </div>
+                </div>
+              </div>
+
             </div>
-          </div> -->
+
+
+          </div>
         </div>
+      </div>
+
+      <div class="container filtros-asignaturas">
 
         <div class="row instruccion-filtro">
           <div class="col-auto me-lg-auto">
@@ -155,10 +208,10 @@
             <nav>
               <ul class="nav nav-underline shuffle-filter">
                 <!-- <li data-target='all' class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#" href="#">Todas</a>
+                  <a class="nav-link" aria-current="page" href="#">Todas</a>
                 </li> -->
                 <li data-target='matematicas' class="nav-item">
-                  <a class="nav-link" href="#">Matemáticas</a>
+                  <a class="nav-link" aria-current="page" href="#">Matemáticas</a>
                 </li>
                 <li data-target='experimentales' class="nav-item">
                   <a class="nav-link" href="#">Experimentales</a>
@@ -173,6 +226,7 @@
             </nav>
           </div>
         </div>
+
       </div>
 
       <div class="cards-recursos">
@@ -180,71 +234,12 @@
         <div class="container wow animate__animated animate__fadeIn" data-wow-duration="800ms">
           <div class="row shuffle-container">
 
-            <div class="col-lg-12" data-groups='["all","matematicas"]'>
+            <div class="col-lg-12" data-groups='["matematicas"]'>
               <div class="card">
                 <div class="card-header subtitulo-area">
                   Matemáticas
                 </div>
                 <div class="card-body recursos-abiertos p-0">
-                  <!-- <div class="table-responsive">
-                    <table class="table table-hover">
-                      <thead>
-                        <tr>
-                          <th scope="col">Asignatura</th>
-                          <th scope="col">Título</th>
-                          <th scope="col">Consultar</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Matemáticas I</td>
-                          <td>El lenguaje algebraico como representación de la generalidad</td>
-                          <td>
-                            <a class="link" href="https://shorturl.at/kOST3" target="_blank">
-                              https://shorturl.at/kOST3
-                            </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Matemáticas I</td>
-                          <td>Sistema de ecuaciones lineales
-                          <td>
-                            <a class="link" href="https://shorturl.at/kOST3" target="_blank">
-                              https://shorturl.at/kOST3
-                            </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Matemáticas I</td>
-                          <td>Función lineal</td>
-                          <td>
-                            <a class="link" href="https://shorturl.at/kOST3" target="_blank">
-                              https://shorturl.at/kOST3
-                            </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Matemáticas I</td>
-                          <td>Patrones y fórmulas</td>
-                          <td>
-                            <a class="link" href="https://shorturl.at/kOST3" target="_blank">
-                              https://shorturl.at/kOST3
-                            </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Matemáticas II</td>
-                          <td>Semejanza de triángulos</td>
-                          <td>
-                            <a class="link" href="https://shorturl.at/kOST3" target="_blank">
-                              https://shorturl.at/kOST3
-                            </a>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div> -->
-
                   <div class="row cabeza-recursos font-monospace g-0">
                     <div class="col">Asignatura</div>
                     <div class="col">Título</div>
@@ -265,13 +260,525 @@
                   <div class="row cuerpo-recursos g-0 d-flex align-items-center">
                     <div class="col"><span class="asignatura-recurso">Asignatura</span> Matemáticas I</div>
                     <div class="col"><span class="titulo-recurso">Título</span> <a
-                        href="https://alianza.bunam.unam.mx/cch/el-lenguaje-algebraico-como-representacion-de-la-generalidad/"
-                        target="_blank"> El lenguaje algebraico como representación de la generalidad</a></div>
+                        href="https://alianza.bunam.unam.mx/cch/sistema-ecuaciones-lineales-2x2/" target="_blank">
+                        Sistema de ecuaciones lineales 2x2</a></div>
                     <div class="col"><span class="consulta-recurso">Consultar</span><a
-                        href="https://alianza.bunam.unam.mx/cch/el-lenguaje-algebraico-como-representacion-de-la-generalidad/"
-                        target="_blank">Ver recurso</a></div>
+                        href="https://alianza.bunam.unam.mx/cch/sistema-ecuaciones-lineales-2x2/" target="_blank">Ver
+                        recurso</a></div>
                   </div>
 
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso">Asignatura</span> Matemáticas I</div>
+                    <div class="col"><span class="titulo-recurso">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/funcion-lineal/" target="_blank">
+                        Función lineal</a></div>
+                    <div class="col"><span class="consulta-recurso">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/funcion-lineal/" target="_blank">Ver
+                        recurso</a></div>
+                  </div>
+
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso">Asignatura</span> Matemáticas I</div>
+                    <div class="col"><span class="titulo-recurso">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/matematicas-i/patrones-y-formulas/" target="_blank">
+                        Patrones y fórmulas</a></div>
+                    <div class="col"><span class="consulta-recurso">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/matematicas-i/patrones-y-formulas/" target="_blank">Ver
+                        recurso</a></div>
+                  </div>
+
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso">Asignatura</span> Matemáticas II</div>
+                    <div class="col"><span class="titulo-recurso">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/semejanza-de-triangulos/" target="_blank">
+                        Semejanza de triángulos</a></div>
+                    <div class="col"><span class="consulta-recurso">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/semejanza-de-triangulos/" target="_blank">Ver
+                        recurso</a></div>
+                  </div>
+
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso">Asignatura</span> Matemáticas II</div>
+                    <div class="col"><span class="titulo-recurso">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/elementos-basicos-de-geometria-plana/" target="_blank">
+                        Elementos básicos de la geometría plana: punto, línea recta, segmento, semirrecta, ángulo, punto
+                        de intersección, etcétera</a></div>
+                    <div class="col"><span class="consulta-recurso">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/elementos-basicos-de-geometria-plana/"
+                        target="_blank">Ver
+                        recurso</a></div>
+                  </div>
+
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso">Asignatura</span> Matemáticas II</div>
+                    <div class="col"><span class="titulo-recurso">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/eje-de-simetria-de-la-funcion-cuadratica/"
+                        target="_blank">
+                        Eje de simetría de la función cuadrática</a></div>
+                    <div class="col"><span class="consulta-recurso">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/eje-de-simetria-de-la-funcion-cuadratica/"
+                        target="_blank">Ver
+                        recurso</a></div>
+                  </div>
+
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso">Asignatura</span> Matemáticas II</div>
+                    <div class="col"><span class="titulo-recurso">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/resolucion-de-ecuaciones-cuadraticas-de-la-forma-x2-b-ax2-b-ax2-bc-ax2-b0-axb2-cd-xbxc0/"
+                        target="_blank">
+                        Resolución de ecuaciones cuadráticas de la forma: x2=b</a></div>
+                    <div class="col"><span class="consulta-recurso">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/resolucion-de-ecuaciones-cuadraticas-de-la-forma-x2-b-ax2-b-ax2-bc-ax2-b0-axb2-cd-xbxc0/"
+                        target="_blank">Ver
+                        recurso</a></div>
+                  </div>
+
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso">Asignatura</span> Matemáticas III</div>
+                    <div class="col"><span class="titulo-recurso">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/la-parabola-y-su-ecuacion-cartesiana/" target="_blank">
+                        La parábola y su ecuación cartesiana</a></div>
+                    <div class="col"><span class="consulta-recurso">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/la-parabola-y-su-ecuacion-cartesiana/"
+                        target="_blank">Ver
+                        recurso</a></div>
+                  </div>
+
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso">Asignatura</span> Matemáticas III</div>
+                    <div class="col"><span class="titulo-recurso">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/el-punto-en-el-plano-cartesiano/" target="_blank">
+                        El punto en el plano cartesiano</a></div>
+                    <div class="col"><span class="consulta-recurso">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/el-punto-en-el-plano-cartesiano/" target="_blank">Ver
+                        recurso</a></div>
+                  </div>
+
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso">Asignatura</span> Matemáticas III</div>
+                    <div class="col"><span class="titulo-recurso">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/razones-trigonometricas-para-angulos-agudos-de-un-triangulo-rectangulo/"
+                        target="_blank">
+                        Razones trigonométricas para ánulos agudos de un triángulo rectángulo</a></div>
+                    <div class="col"><span class="consulta-recurso">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/razones-trigonometricas-para-angulos-agudos-de-un-triangulo-rectangulo/"
+                        target="_blank">Ver
+                        recurso</a></div>
+                  </div>
+
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso">Asignatura</span> Matemáticas IV</div>
+                    <div class="col"><span class="titulo-recurso">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/asintotas-horizontales/" target="_blank">
+                        Asíntotas Horizontales</a></div>
+                    <div class="col"><span class="consulta-recurso">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/asintotas-horizontales/" target="_blank">Ver
+                        recurso</a></div>
+                  </div>
+
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso">Asignatura</span> Matemáticas IV</div>
+                    <div class="col"><span class="titulo-recurso">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/revision-de-conceptos-dominio-y-rango/" target="_blank">
+                        Revisión de conceptos: Dominio y Rango</a></div>
+                    <div class="col"><span class="consulta-recurso">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/revision-de-conceptos-dominio-y-rango/"
+                        target="_blank">Ver
+                        recurso</a></div>
+                  </div>
+
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso">Asignatura</span> Matemáticas IV</div>
+                    <div class="col"><span class="titulo-recurso">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/nocion-de-funcion/" target="_blank">
+                        Noción de función</a></div>
+                    <div class="col"><span class="consulta-recurso">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/nocion-de-funcion/" target="_blank">Ver
+                        recurso</a></div>
+                  </div>
+
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso">Asignatura</span> Matemáticas IV</div>
+                    <div class="col"><span class="titulo-recurso">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/dominio-y-rango-de-una-funcion-polinomial/"
+                        target="_blank">
+                        Dominio y rango de una función polinominal</a></div>
+                    <div class="col"><span class="consulta-recurso">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/dominio-y-rango-de-una-funcion-polinomial/"
+                        target="_blank">Ver
+                        recurso</a></div>
+                  </div>
+
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso">Asignatura</span> Estadística y Probabilidad I
+                    </div>
+                    <div class="col"><span class="titulo-recurso">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/probabilidad-condicional-y-de-eventos-independientes/"
+                        target="_blank">
+                        Probabilidad condicional y de eventos independientes</a></div>
+                    <div class="col"><span class="consulta-recurso">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/probabilidad-condicional-y-de-eventos-independientes/"
+                        target="_blank">Ver
+                        recurso</a></div>
+                  </div>
+
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso">Asignatura</span> Estadística y Probabilidad I
+                    </div>
+                    <div class="col"><span class="titulo-recurso">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/medidas-de-dispersion-para-datos-no-agrupados/"
+                        target="_blank">
+                        Medidas de Dispersión para datos no agrupados</a></div>
+                    <div class="col"><span class="consulta-recurso">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/medidas-de-dispersion-para-datos-no-agrupados/"
+                        target="_blank">Ver
+                        recurso</a></div>
+                  </div>
+
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso">Asignatura</span> Estadística y Probabilidad I
+                    </div>
+                    <div class="col"><span class="titulo-recurso">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/nociones-basicas-de-investigacion-estadistica-muestreo-y-recopilacion-de-datos/"
+                        target="_blank">
+                        Nociones básicas de investigación, estadística, muestreo y recopilación de datos</a></div>
+                    <div class="col"><span class="consulta-recurso">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/nociones-basicas-de-investigacion-estadistica-muestreo-y-recopilacion-de-datos/"
+                        target="_blank">Ver
+                        recurso</a></div>
+                  </div>
+
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso">Asignatura</span> Estadística y Probabilidad I
+                    </div>
+                    <div class="col"><span class="titulo-recurso">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/enfoques-de-la-probabilidad/" target="_blank">
+                        Enfoques de probabilidad</a></div>
+                    <div class="col"><span class="consulta-recurso">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/enfoques-de-la-probabilidad/" target="_blank">Ver
+                        recurso</a></div>
+                  </div>
+
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso">Asignatura</span> Estadística y Probabilidad II
+                    </div>
+                    <div class="col"><span class="titulo-recurso">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/cual-es-la-prueba-de-hipotesis-para-la-proporcion-de-la-poblacion/"
+                        target="_blank">
+                        ¿Cuál es la prueba de hipótesis para la proporción de la población?</a></div>
+                    <div class="col"><span class="consulta-recurso">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/cual-es-la-prueba-de-hipotesis-para-la-proporcion-de-la-poblacion/"
+                        target="_blank">Ver
+                        recurso</a></div>
+                  </div>
+
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso">Asignatura</span> Estadística y Probabilidad II
+                    </div>
+                    <div class="col"><span class="titulo-recurso">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/que-es-la-distribucion-normal/" target="_blank">
+                        ¿Qué es la Distribución Normal?</a></div>
+                    <div class="col"><span class="consulta-recurso">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/que-es-la-distribucion-normal/" target="_blank">Ver
+                        recurso</a></div>
+                  </div>
+
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso">Asignatura</span> Estadística y Probabilidad II
+                    </div>
+                    <div class="col"><span class="titulo-recurso">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/variable-aleatoria-discreta-en-una-maquina-de-galton/"
+                        target="_blank">
+                        Variable aleatoria discreta en una Máquina de Galton</a></div>
+                    <div class="col"><span class="consulta-recurso">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/variable-aleatoria-discreta-en-una-maquina-de-galton/"
+                        target="_blank">Ver
+                        recurso</a></div>
+                  </div>
+
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso">Asignatura</span> Estadística y Probabilidad II
+                    </div>
+                    <div class="col"><span class="titulo-recurso">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/variables-discretas-y-continuas/" target="_blank">
+                        Variables discretas y continuas</a></div>
+                    <div class="col"><span class="consulta-recurso">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/variables-discretas-y-continuas/" target="_blank">Ver
+                        recurso</a></div>
+                  </div>
+
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso">Asignatura</span> Taller de cómputo
+                    </div>
+                    <div class="col"><span class="titulo-recurso">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/formatos-de-video/" target="_blank">
+                        Formatos de video</a></div>
+                    <div class="col"><span class="consulta-recurso">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/formatos-de-video/" target="_blank">Ver
+                        recurso</a></div>
+                  </div>
+
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso">Asignatura</span> Taller de cómputo
+                    </div>
+                    <div class="col"><span class="titulo-recurso">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/formatos-graficos/" target="_blank">
+                        Formatos gráficos</a></div>
+                    <div class="col"><span class="consulta-recurso">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/formatos-graficos/" target="_blank">Ver
+                        recurso</a></div>
+                  </div>
+
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso">Asignatura</span> Taller de cómputo
+                    </div>
+                    <div class="col"><span class="titulo-recurso">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/tipos-de-computadoras-y-sus-caracteristicas/"
+                        target="_blank">
+                        Tipos de computadoras y sus características</a></div>
+                    <div class="col"><span class="consulta-recurso">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/tipos-de-computadoras-y-sus-caracteristicas/"
+                        target="_blank">Ver
+                        recurso</a></div>
+                  </div>
+
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso">Asignatura</span> Taller de cómputo
+                    </div>
+                    <div class="col"><span class="titulo-recurso">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/historial-de-exploracion-de-un-navegador/"
+                        target="_blank">
+                        Historial de exploración de un navegador</a></div>
+                    <div class="col"><span class="consulta-recurso">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/historial-de-exploracion-de-un-navegador/"
+                        target="_blank">Ver
+                        recurso</a></div>
+                  </div>
+
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso">Asignatura</span> Cálculo Diferencial e Integral I
+                    </div>
+                    <div class="col"><span class="titulo-recurso">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/concavidades-de-la-funcion/" target="_blank">
+                        Concavidades de la función</a></div>
+                    <div class="col"><span class="consulta-recurso">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/concavidades-de-la-funcion/" target="_blank">Ver
+                        recurso</a></div>
+                  </div>
+
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso">Asignatura</span> Cálculo Diferencial e Integral I
+                    </div>
+                    <div class="col"><span class="titulo-recurso">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/esbozo-de-la-grafica-de-la-funcion-a-partir-de-la-primera-derivada/"
+                        target="_blank">
+                        Esbozo de la gráfica de la función a partir de la primera derivada</a></div>
+                    <div class="col"><span class="consulta-recurso">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/esbozo-de-la-grafica-de-la-funcion-a-partir-de-la-primera-derivada/"
+                        target="_blank">Ver
+                        recurso</a></div>
+                  </div>
+
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso">Asignatura</span> Cálculo Diferencial e Integral I
+                    </div>
+                    <div class="col"><span class="titulo-recurso">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/derivada-de-una-suma-de-un-numero-finito-de-funciones/"
+                        target="_blank">
+                        Derivada de una suma de un número finito de funciones</a></div>
+                    <div class="col"><span class="consulta-recurso">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/derivada-de-una-suma-de-un-numero-finito-de-funciones/"
+                        target="_blank">Ver
+                        recurso</a></div>
+                  </div>
+
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso">Asignatura</span> Cálculo Diferencial e Integral I
+                    </div>
+                    <div class="col"><span class="titulo-recurso">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/la-paradoja-de-la-rana/" target="_blank">
+                        La paradoja de la Rama</a></div>
+                    <div class="col"><span class="consulta-recurso">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/la-paradoja-de-la-rana/" target="_blank">Ver
+                        recurso</a></div>
+                  </div>
+
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso">Asignatura</span> Cálculo Diferencial e Integral
+                      II
+                    </div>
+                    <div class="col"><span class="titulo-recurso">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/integrales-inmediatas/" target="_blank">
+                        Integrales inmediatas</a></div>
+                    <div class="col"><span class="consulta-recurso">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/integrales-inmediatas/" target="_blank">Ver
+                        recurso</a></div>
+                  </div>
+
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso">Asignatura</span> Cálculo Diferencial e Integral
+                      II
+                    </div>
+                    <div class="col"><span class="titulo-recurso">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/la-integral-como-funcion/" target="_blank">
+                        La integral como función</a></div>
+                    <div class="col"><span class="consulta-recurso">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/la-integral-como-funcion/" target="_blank">Ver
+                        recurso</a></div>
+                  </div>
+
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso">Asignatura</span> Cálculo Diferencial e Integral
+                      II
+                    </div>
+                    <div class="col"><span class="titulo-recurso">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/propiedades-de-la-integral-definida/" target="_blank">
+                        Propiedades de la integral definida</a></div>
+                    <div class="col"><span class="consulta-recurso">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/propiedades-de-la-integral-definida/"
+                        target="_blank">Ver
+                        recurso</a></div>
+                  </div>
+
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso">Asignatura</span> Cálculo Diferencial e Integral
+                      II
+                    </div>
+                    <div class="col"><span class="titulo-recurso">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/derivada-de-las-funciones-trigonometricas/"
+                        target="_blank">
+                        Derivada de las funciones trigonométricas</a></div>
+                    <div class="col"><span class="consulta-recurso">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/derivada-de-las-funciones-trigonometricas/"
+                        target="_blank">Ver
+                        recurso</a></div>
+                  </div>
+
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso">Asignatura</span> Cibernética y Computación I
+                    </div>
+                    <div class="col"><span class="titulo-recurso">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/expresiones-y-operadores-relacionales-y-logicos/"
+                        target="_blank">
+                        Expresiones y operadores relacionales y lógicos</a></div>
+                    <div class="col"><span class="consulta-recurso">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/expresiones-y-operadores-relacionales-y-logicos/"
+                        target="_blank">Ver
+                        recurso</a></div>
+                  </div>
+
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso">Asignatura</span> Cibernética y Computación I
+                    </div>
+                    <div class="col"><span class="titulo-recurso">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/sistemas-de-numeracion/" target="_blank">
+                        Sistemas de numeración</a></div>
+                    <div class="col"><span class="consulta-recurso">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/sistemas-de-numeracion/" target="_blank">Ver
+                        recurso</a></div>
+                  </div>
+
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso">Asignatura</span> Cibernética y Computación I
+                    </div>
+                    <div class="col"><span class="titulo-recurso">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/sistemas/" target="_blank">
+                        Sistemas</a></div>
+                    <div class="col"><span class="consulta-recurso">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/sistemas/" target="_blank">Ver
+                        recurso</a></div>
+                  </div>
+
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso">Asignatura</span> Cibernética y Computación I
+                    </div>
+                    <div class="col"><span class="titulo-recurso">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/obra-de-distintos-autores-en-trabajos-cientificos-sobre-la-cibernetica/"
+                        target="_blank">
+                        Obra de distintos autores en trabajos científicos sobre la cibernética</a></div>
+                    <div class="col"><span class="consulta-recurso">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/obra-de-distintos-autores-en-trabajos-cientificos-sobre-la-cibernetica/"
+                        target="_blank">Ver
+                        recurso</a></div>
+                  </div>
+
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso">Asignatura</span> Cibernética y Computación II
+                    </div>
+                    <div class="col"><span class="titulo-recurso">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/que-son-los-metodos/" target="_blank">
+                        ¿Qué son los métodos?</a></div>
+                    <div class="col"><span class="consulta-recurso">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/que-son-los-metodos/" target="_blank">Ver
+                        recurso</a></div>
+                  </div>
+
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso">Asignatura</span> Cibernética y Computación II
+                    </div>
+                    <div class="col"><span class="titulo-recurso">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/elementos-involucrados-en-un-programa-en-java/"
+                        target="_blank">
+                        Elementos involucrados en un programa en Java</a></div>
+                    <div class="col"><span class="consulta-recurso">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/elementos-involucrados-en-un-programa-en-java/"
+                        target="_blank">Ver
+                        recurso</a></div>
+                  </div>
+
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso">Asignatura</span> Cibernética y Computación II
+                    </div>
+                    <div class="col"><span class="titulo-recurso">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/que-son-los-arreglos-bidimensionales/" target="_blank">
+                        ¿Qué son los arreglos bidimensionales?</a></div>
+                    <div class="col"><span class="consulta-recurso">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/que-son-los-arreglos-bidimensionales/"
+                        target="_blank">Ver
+                        recurso</a></div>
+                  </div>
+
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso">Asignatura</span> Cibernética y Computación II
+                    </div>
+                    <div class="col"><span class="titulo-recurso">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/conceptos-basicos-de-programacion-orientada-a-objetos/"
+                        target="_blank">
+                        Conceptos básicos de Programación Orientada a Objetos</a></div>
+                    <div class="col"><span class="consulta-recurso">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/conceptos-basicos-de-programacion-orientada-a-objetos/"
+                        target="_blank">Ver
+                        recurso</a></div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-12" data-groups='["experimentales"]'>
+              <div class="card">
+                <div class="card-header subtitulo-area">
+                  Experimentales
+                </div>
+                <div class="card-body recursos-abiertos p-0">
+                  <div class="row cabeza-recursos font-monospace g-0">
+                    <div class="col">Asignatura</div>
+                    <div class="col">Título</div>
+                    <div class="col">Consultar</div>
+                  </div>
+
+                  <div class="row cuerpo-recursos g-0 d-flex align-items-center">
+                    <div class="col"><span class="asignatura-recurso font-monospace">Asignatura</span> Ciencias de la
+                      salud II
+                    </div>
+                    <div class="col"><span class="titulo-recurso font-monospace">Título</span> <a
+                        href="https://alianza.bunam.unam.mx/cch/caracteristicas-de-la-dieta-correcta/" target="_blank">
+                        Características de la dieta correcta</a></div>
+                    <div class="col"><span class="consulta-recurso font-monospace">Consultar</span><a
+                        href="https://alianza.bunam.unam.mx/cch/caracteristicas-de-la-dieta-correcta/"
+                        target="_blank">Ver recurso</a></div>
+                  </div>
 
                 </div>
               </div>
@@ -280,8 +787,6 @@
           </div>
         </div>
 
-      </div>
-      </div>
       </div>
 
     </section>

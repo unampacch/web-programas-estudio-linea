@@ -695,7 +695,8 @@ h3,
 
 /* Inicia Asignaturas */
 
-.asignaturas-disponibles {
+.asignaturas-disponibles,
+.seccion-recursos-abiertos {
     padding: 100px 0 0 0;
 }
 
@@ -949,6 +950,32 @@ h3,
 /* Inicia Recursos */
 .cards-recursos {
     padding: 50px 0 100px 0;
+}
+
+.acordeon-recursos-abiertos p {
+    font-size: 1rem;
+    margin-bottom: 0.625rem;
+}
+
+/* .acordeon-recursos-abiertos p strong {
+    color: #105F5F;
+} */
+
+.acordeon-recursos-abiertos .accordion-button:not(.collapsed),
+.acordeon-recursos-abiertos .accordion-button,
+.acordeon-recursos-abiertos .accordion-item {
+    background-color: #f1f1f1;
+}
+
+.acordeon-recursos-abiertos .accordion-header {
+    background-color: #f1f1f1;
+    border-radius: 1rem;
+}
+
+.acordeon-recursos-abiertos .accordion-body {
+    background-color: #f1f1f1;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
 }
 
 /* .cards-recursos .card {
@@ -1594,7 +1621,8 @@ ul.creditos-nombre {
         display: none;
     }
 
-    .asignaturas-disponibles {
+    .asignaturas-disponibles,
+    .seccion-recursos-abiertos {
         padding: 50px 0 0 0;
     }
 
@@ -1727,17 +1755,25 @@ ul.creditos-nombre {
         display: block;
     }
 
-    .cards-asignaturas,
-    .cards-recursos {
+    .cards-asignaturas {
         padding: 30px 10px 6px 10px;
     }
 
-    .asignaturas-disponibles {
+    .asignaturas-disponibles,
+    .seccion-recursos-abiertos {
         padding: 30px 0 0 0;
     }
 
     .ingreso {
         padding: 30px 16px;
+    }
+
+    .intro-recursos-abiertos {
+        padding: 0 30px 0 30px;
+    }
+
+    .cards-recursos {
+        padding: 30px 18px 30px 18px;
     }
 }
 
