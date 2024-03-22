@@ -1086,6 +1086,11 @@ h3,
     color: #105F5F;
 }
 
+.cuerpo-recursos {
+    display: flex;
+    align-items: center;
+}
+
 @media screen and (min-width: 768px) {
 
     .titulo-recurso,
