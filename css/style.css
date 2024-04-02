@@ -123,7 +123,7 @@ a {
 a.nav-link {
     color: #188A8A !important;
     font-weight: 500;
-    margin: 0 1rem;
+    margin: 0 7px;
 }
 
 a:hover.nav-link {
@@ -1161,7 +1161,7 @@ hr.linea-footer {
 }
 
 .footer-2 .navbar-nav>li>a {
-    padding: 0 15px;
+    padding: 0 10px;
 }
 
 .footer-2 a {
@@ -1219,7 +1219,7 @@ hr.linea-footer {
 
 .redes-footer {
     float: left;
-    padding-left: 1rem;
+    padding-left: 7px;
     border-left: 1px solid #999999;
 }
 
@@ -1252,7 +1252,7 @@ hr.linea-footer {
 }
 
 #footer-inicio .navbar-nav {
-    flex-direction: row !important;
+    flex-direction: row;
 }
 
 /* Termina Footer */
@@ -1335,6 +1335,10 @@ ul.creditos-nombre {
     ul.creditos-nombre {
         text-align: center;
     }
+
+    #footer-inicio .navbar-nav {
+        flex-direction: column;
+    }
 }
 
 /* Termina Créditos */
@@ -1411,6 +1415,33 @@ ul.creditos-nombre {
     .fotos-acerca-footer::before {
         width: 75px;
         height: 75px;
+    }
+
+    #footer-inicio {
+        text-align: center;
+    }
+
+    .footer-1,
+    .footer-2,
+    #social {
+        display: inline-grid !important;
+        justify-content: center !important;
+    }
+
+    .footer-1 {
+        padding: 20px 0;
+    }
+
+    #creditos-leyenda {
+        display: block !important;
+        padding-bottom: 2rem;
+    }
+
+    .redes-footer {
+        float: none;
+        padding-left: 0;
+        padding-top: 2rem;
+        border-left: none;
     }
 }
 
@@ -1539,33 +1570,6 @@ ul.creditos-nombre {
     .numeralia .col-lg-4 {
         padding-right: 0 !important;
         padding-left: 0 !important
-    }
-
-    #footer-inicio {
-        text-align: center;
-    }
-
-    .footer-1,
-    .footer-2,
-    #social {
-        display: inline-grid !important;
-        justify-content: center !important;
-    }
-
-    .footer-1 {
-        padding: 20px 0;
-    }
-
-    #creditos-leyenda {
-        display: block !important;
-        padding-bottom: 2rem;
-    }
-
-    .redes-footer {
-        float: none;
-        padding-left: 0;
-        padding-top: 2rem;
-        border-left: none;
     }
 
     .header-interior {
