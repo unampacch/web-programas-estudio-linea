@@ -420,7 +420,7 @@ h2.subtitulo {
     font-size: 3rem;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
-    padding-bottom: 1.875rem;
+    margin-bottom: 1.875rem;
 }
 
 .numeralia {
@@ -606,6 +606,15 @@ h3,
     z-index: 9;
 }
 
+.recursos-alianza {
+    padding: 100px 0;
+    background: #FFFBEB;
+}
+
+.recursos-alianza .sumario {
+    margin-bottom: 0;
+}
+
 /* Termina Index */
 
 /* Inicia Acerca de */
@@ -619,7 +628,7 @@ h3,
 }
 
 .header-interior h2.subtitulo {
-    padding: 0;
+    margin: 0;
 }
 
 .intro-interior,
@@ -1533,7 +1542,8 @@ ul.creditos-nombre {
 
     .bloque-acerca,
     .bloque-asignaturas,
-    .preguntas-frecuentes {
+    .preguntas-frecuentes,
+    .recursos-alianza {
         padding: 50px 0;
     }
 
@@ -1643,6 +1653,10 @@ ul.creditos-nombre {
     /* #error-message p {
         font-size: 1rem;
     } */
+
+    .recursos-alianza .sumario {
+        margin-bottom: 1.875rem;
+    }
 }
 
 
@@ -1663,7 +1677,8 @@ ul.creditos-nombre {
 
     .bloque-acerca,
     .bloque-asignaturas,
-    .preguntas-frecuentes {
+    .preguntas-frecuentes,
+    .recursos-alianza {
         padding: 50px;
     }
 
@@ -1672,7 +1687,7 @@ ul.creditos-nombre {
     } */
 
     h2.subtitulo {
-        padding-top: 1.875rem;
+        margin-top: 1.875rem;
     }
 
     h3,
@@ -1709,7 +1724,7 @@ ul.creditos-nombre {
     }
 
     .ingreso h2.subtitulo {
-        padding-top: 0
+        margin-top: 0
     }
 }
 
@@ -1728,7 +1743,8 @@ ul.creditos-nombre {
     }
 
     .bloque-asignaturas,
-    .preguntas-frecuentes {
+    .preguntas-frecuentes,
+    .recursos-alianza {
         padding: 30px 18px;
     }
 
