@@ -126,7 +126,9 @@
             <h2 class="subtitulo wow animate__animated animate__fadeIn" data-wow-duration="1.5s">Ingresa a tus <span
                 class="shape-bg">asignaturas</span></h2>
             <div class="alert alert-warning">
-              <p class="mb-0">Recuerda que para acceder al contenido debes estar inscrito.</p>
+              <p class="mb-0 ayuda-ingreso">Conoce los horarios de los exámenes finales <a href="#!"
+                  data-bs-toggle="modal" data-bs-target="#modal-horarios-pal">en este enlace.</a></p>
+              <!-- <p class="mb-0">Recuerda que para acceder al contenido debes estar inscrito.</p> -->
             </div>
             <!-- <p>Por favor escribe tus datos.</p> -->
             <form action="../login/index.php" method="post" class="wow animate__animated animate__fadeIn"
@@ -202,8 +204,8 @@
         <hr class="linea-footer">
         <div class="row footer-2">
           <div class="col-lg-6 col-md-12" id="creditos-leyenda">
-            <p>Escuela Nacional Colegio de Ciencias y Humanidades | <a
-                href="https://portalacademico.cch.unam.mx/" target="_blank">Portal Académico</a></p>
+            <p>Escuela Nacional Colegio de Ciencias y Humanidades | <a href="https://portalacademico.cch.unam.mx/"
+                target="_blank">Portal Académico</a></p>
           </div>
           <div class="col-lg-6 col-md-12" id="social">
             <nav>
@@ -234,6 +236,20 @@
     </footer>
 
   </main>
+
+  <!-- Modal horarios -->
+  <div class="modal fade" id="modal-horarios-pal" tabindex="-1" aria-labelledby="modal-horarios-pal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <img src="img/horarios-examenes-pal10.jpg" class="img-fluid" alt="Horaios de exámenes finales PAL 10">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-green rounded-pill w-100" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- <script type="module" src="js/swup.js"></script> -->
 

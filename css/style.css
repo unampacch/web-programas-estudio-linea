@@ -791,11 +791,13 @@ h3,
     padding: 20px 20px 0 20px;
 }
 
-.modal-asignaturas .modal-header img {
+.modal-asignaturas .modal-header img,
+#modal-horarios-pal img {
     border-radius: 20px;
 }
 
-.modal-asignaturas .modal-content {
+.modal-asignaturas .modal-content,
+#modal-horarios-pal .modal-content {
     border-radius: 20px;
 }
 
@@ -945,7 +947,8 @@ h3,
     padding: 0 3.125rem 3.125rem 3.125rem;
 }
 
-.error-message .modal-content {
+.error-message .modal-content,
+#modal-horarios-pal .modal-content {
     border-radius: 15px;
 }
 
