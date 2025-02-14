@@ -1169,6 +1169,11 @@ hr.linea-footer {
 #footer-inicio p {
     color: #fff;
     font-size: 16px;
+}
+
+#footer-inicio p:nth-child(2) {
+    color: #F87553;
+    font-size: 16px;
     margin: 0;
 }
 
