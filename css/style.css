@@ -791,13 +791,11 @@ h3,
     padding: 20px 20px 0 20px;
 }
 
-.modal-asignaturas .modal-header img,
-#modal-horarios-pal img {
+.modal-asignaturas .modal-header img {
     border-radius: 20px;
 }
 
-.modal-asignaturas .modal-content,
-#modal-horarios-pal .modal-content {
+.modal-asignaturas .modal-content {
     border-radius: 20px;
 }
 
@@ -938,23 +936,39 @@ h3,
     z-index: 10;
 }
 
-.error-message .modal-header {
+.error-message .modal-header,
+.service-delay-message .modal-header {
     border-bottom: 0;
 }
 
-.error-message .modal-body {
+.error-message .modal-body,
+.service-delay-message .modal-body {
     text-align: center;
     padding: 0 3.125rem 3.125rem 3.125rem;
 }
 
 .error-message .modal-content,
-#modal-horarios-pal .modal-content {
+.service-delay-message .modal-content {
     border-radius: 15px;
 }
 
-.error-message .texto-error {
+.error-message .texto-error,
+.service-delay-message .texto-error {
     font-size: 3.125rem;
     margin-bottom: 1rem;
+}
+
+.service-delay-message .modal-dialog {
+    max-width: 520px;
+}
+
+.service-delay-message .modal-content {
+    border: 0;
+    overflow: hidden;
+}
+
+.service-delay-message .modal-body p {
+    margin: 0;
 }
 
 /* Termina Ingreso */
